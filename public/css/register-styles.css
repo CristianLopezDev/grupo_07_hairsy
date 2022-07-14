@@ -30,7 +30,7 @@ header {
     }
 
 .logo {
-    border: 2px solid black;
+    
     display: flex;
     width: 15%;
     padding: 5px;
@@ -117,11 +117,11 @@ main {
     display: flex;
     align-items: center;
     width: 320px;
-    height: 350px;
+    height: 460px;
     flex-direction: column;
     transform: translate( -50%,-50%);
-    position: relative;
-    top: 25%;
+    position: relative; 
+    top: 30%;
     left: 50%;
     box-sizing: border-box;
     padding: 30px 30px;

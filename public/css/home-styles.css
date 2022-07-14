@@ -88,7 +88,7 @@ ul {
 }
 .foto4 {
     
-}*/
+}
 
 .img {
     width: 100%;
@@ -102,11 +102,11 @@ ul {
     visibility: hidden;
     align-items: center;
 }
-
+*/
 
 .t1 {
     font-family: 'Satisfy', cursive;
-    color:white;
+    color:rgb(0, 0, 0);
     position: absolute;
 }
 
@@ -121,6 +121,7 @@ footer{
     background: url(/public/images/Fondo\ Header.jpg);
     margin-top: 80px;
     padding: 2px;
+    height: 100px;
 }
 
 
