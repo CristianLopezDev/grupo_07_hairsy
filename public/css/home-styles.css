@@ -11,7 +11,9 @@ body{
 }
 
 header {
-   
+    background: url(/public/images/Fondo\ Header.jpg);
+    background-size: 100%;
+    background-position-x: left;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
@@ -75,35 +77,19 @@ ul {
     height: 60vh;
 }
 
-.foto1 {
-    width: 25% ;
-    height: 47%;
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-    margin-top: 20px    ;
+/*.foto1 {
+    
+    
 }
 .foto2 {
-    width: 25%;
-    height: 43.5%; 
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
+    
 }
 .foto3 {
-    width: 25%;
-    height: 43.5%;
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
+    
 }
 .foto4 {
-    width: 25%;
-    height: 43.5%;
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-}
+    
+}*/
 
 .img {
     width: 100%;
