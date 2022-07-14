@@ -11,7 +11,9 @@ body{
 }
 
 header {
-   
+    background: url(/public/images/Fondo\ Header.jpg);
+    background-size: 100%;
+    background-position-x: left;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
