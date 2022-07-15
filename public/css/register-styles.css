@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px ;
+    padding: 2px;
+    
+}
+
+body{
+    font-family: roboto;
+}
+
+.t1 {
+    font-family: 'Satisfy', cursive;
+    color:white;
+    position: absolute;
+}
+
+header {
+    background: url(/public/images/Fondo\ Header.jpg);
+    background-size: 100%;
+    background-position-x: left;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.borde-logo {
+    padding: 0px;
+    }
+
+.logo {
+    
+    display: flex;
+    width: 15%;
+    padding: 5px;
+
+}
+
+ul {
+   padding: 40px;
+    display: flex;
+    list-style: none;
+   
+}
+
+.tendencias {
+    margin-left: 60px;
+    font-weight: bold;
+    
+}
+
+.descuentos {
+    font-weight: bold;
+}
+
+.cart{
+    width: 10%;
+}
+
+.ayuda{
+    width: 25%;
+}
+
+.forms{
+    display: flex;
+}
+
+.cuenta {
+    width: 50%;
+}
+
+.login{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.fotos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.img {
+    width: 100%;
+    height: 90%;
+    transition: all 500ms ease-out;
+}
+
+.capa{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    align-items: center;
+}
+
+.foto1:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+main {
+    
+    background: url(/public/images/Fondo\ login1.jpeg) no-repeat center top;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.login-box {
+    background: rgb(250, 195, 195, 0.78);
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 460px;
+    flex-direction: column;
+    transform: translate( -50%,-50%);
+    position: relative; 
+    top: 30%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 20px;
+
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.pregunta {
+    margin-bottom: 20px;
+    color: blanchedalmond;
+    display: flex;
+    width: 320px;
+    position: relative;
+    right: 80%;
+    font-size: 15px;
+}
+
+
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-box button {
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: none;
+    
+}
+.password {
+    margin-bottom: 20px;
+
+}
+
+.logos {
+
+    display: flex;
+    padding: 15px;
+
+}
+
+footer{ 
+    background: url(/public/images/Fondo\ Header.jpg);
+    margin-top: 80px;
+    padding: 0px;
+    margin:0px
+}

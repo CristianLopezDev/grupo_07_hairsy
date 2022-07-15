@@ -5,6 +5,10 @@ Sabemos lo valioso que es el tiempo, por eso reunimos en un solo lugar las mejor
 Si no encontrás lo que buscas es porque aún no existe.
 ¡Bienvenidxs a HAIRSY!
 
+## Historias de usuario
+Usamos Trello para las tarjetas de las historias de usuario
+https://trello.com/b/BPVDsJln/hairsy
+
 ## Integrantes
 - Nadia Schraier
 - Martin Hinojal

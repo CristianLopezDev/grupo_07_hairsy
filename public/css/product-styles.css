@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px ;
+    padding: 2px;
+    
+}
+
+body{
+    font-family: roboto;
+}
+
+header {
+    background: url(/public/images/Fondo\ Header.jpg);
+    background-size: 100%;
+    background-position-x: left;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.borde-logo {
+    padding: 0px;
+    }
+
+.logo {
+    
+    display: flex;
+    width: 15%;
+    padding: 5px;
+   
+
+}
+
+ul {
+   padding: 40px;
+    display: flex;
+    list-style: none;
+   
+}
+
+.tendencias {
+    margin-left: 60px;
+    font-weight: bold;
+    
+}
+
+.descuentos {
+    font-weight: bold;
+}
+
+.cart{
+    width: 10%;
+}
+
+.ayuda{
+    width: 25%;
+}
+
+.forms{
+    display: flex;
+}
+
+.cuenta {
+    width: 50%;
+}
+
+.login{
+    width: 50%;
+}
+
+
+.t1 {
+    font-family: 'Satisfy', cursive;
+    color:white;
+    position: absolute;
+}
+
+.logos {
+
+    display: flex;
+    padding: 15px;
+
+}
+
+main {
+    
+    background: url(/public/images/product-background.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    opacity: 1;
+}
+
+footer{ 
+        background: url(/public/images/Fondo\ Header.jpg);
+        margin-top: 80px;
+        padding: 0px;
+        margin:0px
+    }
+
+.product-detail{
+    max-width: 40%;
+    max-height: 70%;
+    position: relative;
+    border-radius: 20%;
+    padding: 20px;
+    margin: 100px;
+}
+.producto {
+    display:flex
+}
+
+.descripcion{
+    display:flex;
+    flex-direction: column;
+    color: aliceblue;
+    margin-top: 120px;
+    margin-right: 20px
+}
+
+.agregar-carrito-button{
+    background-color: darksalmon;
+    height: 30px;
+    width: 200px;
+    border-radius: 8%;
+    font-weight: 100;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+
