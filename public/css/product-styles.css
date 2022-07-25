@@ -12,12 +12,27 @@ body{
 
 header {
     background: url(/public/images/Fondo\ Header.jpg);
-    background-size: 100%;
-    background-position-x: left;
     border-bottom: 1px solid black;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    color: white;
 }
+.header-menu{
+    display:none;
+}
+.menu-mobile{
+    display:block;
+    display:flex;
+    margin: 30px;
+    font-size: 20px;
+    color: black
+}
+
 
 .borde-logo {
     padding: 0px;
@@ -36,17 +51,20 @@ ul {
    padding: 40px;
     display: flex;
     list-style: none;
+    
    
 }
 
 .tendencias {
     margin-left: 60px;
     font-weight: bold;
+    font-family: Satisfy;
     
 }
 
 .descuentos {
     font-weight: bold;
+    font-family: Satisfy;
 }
 
 .cart{
@@ -77,10 +95,11 @@ ul {
 }
 
 .logos {
-
+    align-items: center;
     display: flex;
-    padding: 15px;
-
+    padding: 20px;
+    margin-left: 70px;
+   
 }
 
 main {
@@ -92,13 +111,9 @@ main {
     height: 100vh;
     opacity: 1;
 }
-
-footer{ 
-        background: url(/public/images/Fondo\ Header.jpg);
-        margin-top: 80px;
-        padding: 0px;
-        margin:0px
-    }
+footer {
+    width: 100vw;
+}
 
 .product-detail{
     max-width: 40%;
@@ -134,3 +149,37 @@ h3{
 }
 
 
+@media (max-width: 460px){
+    /* Tablets */
+    .fotos {
+        flex-direction: column; 
+     }
+   
+}
+
+
+@media (min-width: 460px){
+    /* Tablets */
+    .fotos {
+        flex-direction: column; 
+     }
+   
+}
+@media (min-width: 768px){
+    /* Laptop */
+    .header-menu{
+        display:block;
+    }
+    .menu-mobile{
+        display:none;
+    }
+    video {
+        display: block;
+    }
+    .fotos {
+        flex-direction: row; 
+     }
+   
+ 
+
+}

@@ -2,22 +2,97 @@
     box-sizing: border-box;
     width: 100%;
     margin: 0px ;
-    padding: 2px;
+    padding: 0px;
+    text-decoration: none;
     
 }
 
+
+
 body{
+    background: url(/public/images/abstract1.mp4);
     font-family: roboto;
+
+}
+
+video {
+
+    display: none;
+}
+
+.main-container {
+    width:100%;
+    display: block; 
+    min-height: 300px;
+}
+    
+#banner {
+    position: relative;
+    height: 100vh;
+    width:100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+#banner::after{
+    width: 100%;
+    height: 100%;
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    /*background:rgba(255, 169, 216, 0.486);*/
+
+}
+
+#banner video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    object-fit: cover;
+}
+
+.fotos {
+    z-index: 1;
+    position: absolute;
+    top: 20%;  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
 }
 
 header {
     background: url(/public/images/Fondo\ Header.jpg);
-    background-size: 100%;
-    background-position-x: left;
     border-bottom: 1px solid black;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    color: white;
 }
+.header-menu{
+    display:none;
+}
+.menu-mobile{
+    display:block;
+    display:flex;
+    margin: 30px;
+    font-size: 20px;
+    color: black
+}
+
 
 .borde-logo {
     padding: 0px;
@@ -30,103 +105,95 @@ header {
    
 
 }
-
 ul {
-   padding: 40px;
+    padding: 40px;
     display: flex;
     list-style: none;
+    color: white;
    
 }
-
 .tendencias {
     margin-left: 60px;
     font-weight: bold;
-    
+    font-family: Satisfy;
+    color: white;
 }
-
 .descuentos {
     font-weight: bold;
+    font-family: Satisfy;
 }
-
 .cart{
     width: 10%;
-}
-
-.ayuda{
-    width: 25%;
-}
-
-.forms{
-    display: flex;
 }
 
 .cuenta {
     width: 50%;
 }
-
 .login{
     width: 50%;
 }
-
-.fotos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-}
-
-/*.foto1 {
-    
-    
-}
-.foto2 {
-    
-}
-.foto3 {
-    
-}
-.foto4 {
-    
-}
-
 .img {
     width: 100%;
     height: 90%;
     transition: all 500ms ease-out;
 }
-
 .capa{
     position: absolute;
     opacity: 0;
     visibility: hidden;
     align-items: center;
 }
-*/
-
 .t1 {
     font-family: 'Satisfy', cursive;
     color:rgb(0, 0, 0);
     position: absolute;
 }
-
 .logos {
-
+    align-items: center;
     display: flex;
-    padding: 15px;
-
+    padding: 20px;
+    margin-left: 70px;
+   
 }
-
-footer{ 
-    background: url(/public/images/Fondo\ Header.jpg);
-    margin-top: 80px;
-    padding: 2px;
-    height: 100px;
+footer {
+    width: 100vw;
 }
 
 
+@media (max-width: 460px){
+    /* Tablets */
+    .fotos {
+        flex-direction: column; 
+     }
+   
+}
 
 
+@media (min-width: 460px){
+    /* Tablets */
+    .fotos {
+        flex-direction: column; 
+     }
+   
+}
+@media (min-width: 768px){
+    /* Laptop */
+    .header-menu{
+        display:block;
+    }
+    .menu-mobile{
+        display:none;
+    }
+    video {
+        display: block;
+    }
+    .fotos {
+        flex-direction: row; 
+     }
+   
+ 
+
+}
 
 
 
