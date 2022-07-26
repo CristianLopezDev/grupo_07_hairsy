@@ -22,9 +22,7 @@ header {
     z-index: 100;
     color: white;
 }
-.header-menu{
-    display:none;
-}
+
 .menu-mobile{
     display:block;
     display:flex;
@@ -39,60 +37,26 @@ header {
     }
 
 .logo {
-    
     display: flex;
     width: 15%;
     padding: 5px;
    
 
 }
-
 ul {
-   padding: 40px;
+    padding: 40px;
     display: flex;
     list-style: none;
-    
-   
-}
-
-.tendencias {
-    margin-left: 60px;
-    font-weight: bold;
-    font-family: Satisfy;
-    
-}
-
-.descuentos {
-    font-weight: bold;
-    font-family: Satisfy;
-}
-
-.cart{
-    width: 10%;
-}
-
-.ayuda{
-    width: 25%;
-}
-
-.forms{
-    display: flex;
-}
-
-.cuenta {
-    width: 50%;
-}
-
-.login{
-    width: 50%;
+    color: white;
 }
 
 
-.t1 {
-    font-family: 'Satisfy', cursive;
-    color:white;
-    position: absolute;
+a {
+    text-decoration: none;
+    color: white;
 }
+
+
 
 .logos {
     align-items: center;
@@ -111,8 +75,28 @@ main {
     height: 100vh;
     opacity: 1;
 }
+
 footer {
     width: 100vw;
+}
+
+.grilla-footer{
+    display: flex;
+    font-family: roboto;
+    padding: 20px;
+   text-align: center;
+}
+
+.titulo_footer{
+    font-size: 15px;
+}
+p{
+    font-size: 12px;
+}
+
+.marcaRegistrada {
+    display: flex;
+    flex-direction: row;
 }
 
 .product-detail{
@@ -167,12 +151,7 @@ h3{
 }
 @media (min-width: 768px){
     /* Laptop */
-    .header-menu{
-        display:block;
-    }
-    .menu-mobile{
-        display:none;
-    }
+   
     video {
         display: block;
     }

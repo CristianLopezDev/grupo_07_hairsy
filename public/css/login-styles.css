@@ -22,16 +22,16 @@ header {
     z-index: 100;
     color: white;
 }
-.header-menu{
-    display:none;
+
+ul {
+    padding: 40px;
+    display: flex;
+    list-style: none;
+    color: white;
 }
-.menu-mobile{
-    display:block;
-    display:flex;
-    margin: 30px;
-    font-size: 20px;
-    color: black
-}
+
+
+
 
 
 .borde-logo {
@@ -45,102 +45,30 @@ header {
     padding: 5px;
 
 }
+footer {
+    width: 100vw;
+}
 
-ul {
-   padding: 40px;
+.grilla-footer{
     display: flex;
-    list-style: none;
-   
+    font-family: roboto;
+    padding: 20px;
+   text-align: center;
 }
 
-.tendencias {
-    margin-left: 60px;
-    font-weight: bold;
-    font-family: Satisfy;
-    
+.titulo_footer{
+    font-size: 15px;
+}
+p{
+    font-size: 12px;
 }
 
-.descuentos {
-    font-weight: bold;
-    font-family: Satisfy;
-}
-
-.cart{
-    width: 10%;
-}
-
-.ayuda{
-    width: 25%;
-}
-
-.forms{
+.marcaRegistrada {
     display: flex;
+    flex-direction: row;
 }
 
-.cuenta {
-    width: 50%;
-}
 
-.login{
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.fotos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-}
-
-/*.foto1 {
-    width: 450px ;
-    height:400px;
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-}
-.foto2 {
-    width: 450px;
-    height: 400px; 
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-}
-.foto3 {
-    width: 450px;
-    height: 400px;
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-}
-.foto4 {
-    width: 450px;
-    height: 400px;
-    /*box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-}*/
-
-.img {
-    width: 100%;
-    height: 90%;
-    transition: all 500ms ease-out;
-}
-
-.capa{
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    align-items: center;
-}
-
-.foto1:hover > .capa{
-    opacity: 1;
-    visibility: visible;
-}
 
 
 main {
@@ -240,12 +168,7 @@ footer {
 }
 @media (min-width: 768px){
     /* Laptop */
-    .header-menu{
-        display:block;
-    }
-    .menu-mobile{
-        display:none;
-    }
+   
     video {
         display: block;
     }
