@@ -12,7 +12,7 @@ body{
 
 header {
     background: url(/public/images/Fondo\ Header.jpg);
-    border-bottom: 1px solid black;
+    
     width: 100vw;
     display: flex;
     justify-content: space-between;

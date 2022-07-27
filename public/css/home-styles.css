@@ -78,7 +78,7 @@ video {
 
 header {
     background: url(/public/images/Fondo\ Header.jpg);
-    border-bottom: 1px solid black;
+   
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -171,13 +171,13 @@ p{
 }
 
 /***********************MEDIA QUERY*****************************************************************/
-@media (max-width: 460px){
-    /* Tablets */
+/*@media (max-width: 460px){
+    /* Tablets 
     .fotos {
         flex-direction: column; 
      }
    
-}
+}*/
 
 
 @media (min-width: 460px){
