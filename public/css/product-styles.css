@@ -23,14 +23,21 @@ header {
     color: white;
 }
 
-.menu-mobile{
+.nav li a {
+    text-decoration:none;
+    padding:5px;
     display:block;
-    display:flex;
-    margin: 30px;
-    font-size: 20px;
-    color: black
 }
 
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
 
 .borde-logo {
     padding: 0px;

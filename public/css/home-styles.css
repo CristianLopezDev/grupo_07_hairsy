@@ -107,11 +107,29 @@ ul {
     color: white;
 }
 
-
 a {
     text-decoration: none;
     color: white;
 }
+
+
+.nav li a {
+    color:#fff;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
 
 /***************************************************************************************/
 

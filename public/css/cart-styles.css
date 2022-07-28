@@ -30,9 +30,26 @@ header {
     display: flex;
     width: 15%;
     padding: 5px;
-   
-
 }
+
+
+.nav li a {
+    color:#fff;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
 ul {
     padding: 40px;
     display: flex;
