@@ -22,15 +22,6 @@ header {
     color: white;
 }
 
-.menu-mobile{
-    display:block;
-    display:flex;
-    margin: 30px;
-    font-size: 20px;
-    color: black
-}
-
-
 .borde-logo {
     padding: 0px;
     }
@@ -39,20 +30,19 @@ header {
     display: flex;
     width: 15%;
     padding: 5px;
-   
-
 }
+
 ul {
     padding: 40px;
     display: flex;
     list-style: none;
-    color: white;
+    color: black;
 }
 
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .logo {
@@ -78,8 +68,6 @@ a {
 }
 
 main {
-    
-    background: url(/public/images/Fondo\ login1.jpeg) no-repeat center top;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -87,20 +75,21 @@ main {
 }
 
 .login-box {
-    background: rgb(250, 195, 195, 0.78);
+    background: #FFCB00;
+    margin-top: 200px;
+    border: 1px solid black;
     display: flex;
     align-items: center;
     width: 320px;
-    height: 460px;
+    height: 450px;
     flex-direction: column;
     transform: translate( -50%,-50%);
-    position: relative; 
-    top: 30%;
+    position: relative;
+    top: 25%;
     left: 50%;
     box-sizing: border-box;
     padding: 30px 30px;
     border-radius: 20px;
-
 }
 
 h2 {
@@ -147,7 +136,6 @@ h2 {
     align-items: center;
     display: flex;
     padding: 20px;
-    margin-left: 70px;
    
 }
 
@@ -161,6 +149,10 @@ footer {
     font-family: roboto;
     padding: 20px;
    text-align: center;
+}
+
+.social{
+    color: black;
 }
 
 .titulo_footer{

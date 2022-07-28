@@ -53,7 +53,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 
@@ -62,7 +62,6 @@ a {
     align-items: center;
     display: flex;
     padding: 20px;
-    margin-left: 70px;
 }
 
 .banner{
@@ -124,11 +123,15 @@ footer {
     background-color: white;
 }
 
+.social{
+    color: black;
+}
+
 .grilla-footer{
     display: flex;
     font-family: roboto;
     padding: 20px;
-   text-align: center;
+    text-align: center;
 }
 
 .titulo_footer{

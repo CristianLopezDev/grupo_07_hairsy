@@ -11,8 +11,7 @@ body{
 }
 
 header {
-    background: url(/public/images/Fondo\ Header.jpg);
-    
+    background: url(/public/images/Fondo\ Header.jpg); 
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -23,6 +22,11 @@ header {
     color: white;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 ul {
     padding: 40px;
     display: flex;
@@ -30,9 +34,9 @@ ul {
     color: white;
 }
 
-
-
-
+.social{
+    color: black;
+}
 
 .borde-logo {
     padding: 0px;
@@ -59,6 +63,7 @@ footer {
 .titulo_footer{
     font-size: 15px;
 }
+
 p{
     font-size: 12px;
 }
@@ -72,8 +77,6 @@ p{
 
 
 main {
-    
-    background: url(/public/images/Fondo\ login1.jpeg) no-repeat center top;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -81,7 +84,9 @@ main {
 }
 
 .login-box {
-    background: rgb(250, 195, 195, 0.78);
+    background: #FFCB00;
+    margin-top: 200px;
+    border: 1.5px solid black;
     display: flex;
     align-items: center;
     width: 320px;
@@ -108,13 +113,13 @@ h2 {
 }
 
 .pregunta {
+    margin-left: 200px;
+    width: 300px;
     margin-bottom: 20px;
     color: blanchedalmond;
     display: flex;
-    width: 320px;
     position: relative;
     right: 80%;
-    font-size: 15px;
 }
 
 
@@ -141,13 +146,9 @@ h2 {
     align-items: center;
     display: flex;
     padding: 20px;
-    margin-left: 70px;
    
 }
 
-footer {
-    width: 100vw;
-}
 
 
 @media (max-width: 460px){

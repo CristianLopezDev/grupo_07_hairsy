@@ -9,14 +9,41 @@
 body{
     font-family: roboto;
 }
-
 header {
     background: url(/public/images/Fondo\ Header.jpg);
-    background-size: 100%;
-    background-position-x: left;
-    border-bottom: 1px solid black;
+   
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    color: white;
+}
+
+.borde-logo {
+    padding: 0px;
+    }
+
+.logo {
+    display: flex;
+    width: 15%;
+    padding: 5px;
+   
+
+}
+ul {
+    padding: 40px;
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .borde-logo {
@@ -39,36 +66,6 @@ ul {
    
 }
 
-.tendencias {
-    margin-left: 60px;
-    font-weight: bold;
-    
-}
-
-.descuentos {
-    font-weight: bold;
-}
-
-.cart{
-    width: 10%;
-}
-
-.ayuda{
-    width: 25%;
-}
-
-.forms{
-    display: flex;
-}
-
-.cuenta {
-    width: 50%;
-}
-
-.login{
-    width: 50%;
-}
-
 
 .t1 {
     font-family: 'Satisfy', cursive;
@@ -78,28 +75,47 @@ ul {
 
 .logos {
 
+    align-items: center;
     display: flex;
-    padding: 15px;
-
+    padding: 20px;
 }
 
 main {
     
-    /*background: url(/public/images/product-background.jpg) no-repeat center top;
-    background-size: cover;*/
-    margin-top: 20px;
+    margin-top: 250px;
     margin-bottom: 20px;
     padding: 20px 0 15px 0;
     height: 100vh;
     opacity: 1;
 }
 
-footer{ 
-        background: url(/public/images/Fondo\ Header.jpg);
-        margin-top: 80px;
-        padding: 0px;
-        margin:0px
-    }
+footer {
+    width: 100vw;
+    margin-top: 400px;
+}
+
+.grilla-footer{
+    display: flex;
+    font-family: roboto;
+    padding: 20px;
+   text-align: center;
+}
+
+.titulo_footer{
+    font-size: 15px;
+}
+p{
+    font-size: 12px;
+}
+
+.marcaRegistrada {
+    display: flex;
+    flex-direction: row;
+}
+
+.social{
+    color: black;
+}
 
 .product-detail{
     max-width: 40%;

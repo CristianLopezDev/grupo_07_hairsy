@@ -89,15 +89,6 @@ header {
     color: white;
 }
 
-.menu-mobile{
-    display:block;
-    display:flex;
-    margin: 30px;
-    font-size: 20px;
-    color: black
-}
-
-
 .borde-logo {
     padding: 0px;
     }
@@ -149,6 +140,7 @@ a {
 /************************FOOTER***************************************************************/
 footer {
     width: 100vw;
+    margin-top: 400px;
 }
 
 .grilla-footer{
@@ -168,6 +160,10 @@ p{
 .marcaRegistrada {
     display: flex;
     flex-direction: row;
+}
+
+.social{
+    color: black;
 }
 
 /***********************MEDIA QUERY*****************************************************************/
@@ -196,7 +192,9 @@ p{
     .fotos {
         flex-direction: row; 
      }
-   
+     footer {
+        margin-top: 0px;
+    }
  
 
 }
