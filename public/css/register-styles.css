@@ -33,21 +33,13 @@ header {
     display:none;
     position:absolute;
     min-width:140px;
+    padding: 0px;
 }
 
 .nav li:hover > ul {
     display:block;
 }
 
-.borde-logo {
-    padding: 0px;
-    }
-
-.logo {
-    display: flex;
-    width: 15%;
-    padding: 5px;
-}
 
 ul {
     padding: 40px;
@@ -62,13 +54,6 @@ a {
     color: black;
 }
 
-.logo {
-    
-    display: flex;
-    width: 15%;
-    padding: 5px;
-
-}
 
 
 .cart{

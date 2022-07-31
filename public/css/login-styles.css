@@ -33,6 +33,7 @@ header {
     display:none;
     position:absolute;
     min-width:140px;
+    padding: 0px;
 }
 
 .nav li:hover > ul {

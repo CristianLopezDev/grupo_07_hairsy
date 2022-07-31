@@ -34,7 +34,7 @@ header {
 
 
 .nav li a {
-    color:#fff;
+    color: black;
     text-decoration:none;
     padding:5px;
     display:block;
@@ -44,6 +44,7 @@ header {
     display:none;
     position:absolute;
     min-width:140px;
+    padding: 0px;
 }
 
 .nav li:hover > ul {
@@ -54,14 +55,10 @@ ul {
     padding: 40px;
     display: flex;
     list-style: none;
-    color: white;
-}
-
-
-a {
-    text-decoration: none;
     color: black;
 }
+
+
 
 .borde-logo {
     padding: 0px;
@@ -80,6 +77,7 @@ ul {
    padding: 40px;
     display: flex;
     list-style: none;
+    color: black;
    
 }
 
@@ -170,5 +168,17 @@ p{
 h3{
     text-align: center;
 }
+.campos{
+    padding: 10px;
+    text-align: baseline;
+}
+
+.payment-icons{
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+}
+
+
 
 

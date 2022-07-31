@@ -12,13 +12,10 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <div class="borde-logo"><a href="/"><img src="/public/images/Logo.png"></a>
-            </div>
-        </div>
         <div>
             <div class="header-menu">
-                <ul class="nav">    
+                <ul class="nav">
+                    <a href="/"><img src="/public/images/logo2.png"></a>  
                     <li class="menu"><a href="#"><i class="fas fa-thin fa-bars"></i></a></li>
                     <li class="wish-list"><a href="#"><i class="fas fa-thin fa-heart"></i></a></li>
                     <li class="user"><a href="#"><i class="fas fa-thin fa-user"></i></a>
@@ -34,29 +31,35 @@
             </div>
     </header>
     <main class="main-cart">
-        <h1>Bolsa de productos</h1>  
-        <div class="producto"><img class="product-detail" src="/public/images/product.png">
-            <div class="descripcion">
-            <br>
-            <p>Crema Facial</p>
-            <br>
-            <h3>$200.00 (Imp. incluidos)</h3>
+        <section>
+            <div class="product-img"><img src="/public/images/producto1.png">
+                <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+            <h5>Datos para envío</h5>
+        <div class="form_pago">
+            <input type="text" placeholder="Dirección"></input>
+            <input type="text" placeholder="Localidad"></input>
+            <input type="text" placeholder="Codigo postal"></input>
+            <button type="submit">Calcular envio</button>
+            <h5>Rango horario para la entrega</h5>
+         <div class="campos">  
+            09 a 14 horas<input type="radio" name="horario" value="09 a 14">
+            14 a 19 horas<input type="radio" name="horario" value="14 a 19">
         </div>
-        <br>
-        <div class="producto">
-            <div class="descripcion">
-            <br>
-            <p>Cepillo 200 cerdas</p>
-            <br>
-            <h3>$150.00 (Imp. incluidos)</h3>
         </div>
-        <br>
-        <div class="subtotal">
-            <h3>Subtotal</h3>  
-            <h3>$350.00 (Imp. incluidos)</h3>
-            <br>
-            <button class="agregar-carrito-button">Comprar</button>
-        </div>
+
+            <h5>Pago</h5>
+            <div class="payment-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+            </div>
+            <input type="text" placeholder="Nombre del titular"></input>
+            <input type="text" placeholder="Numero de tarjeta"></input>
+            <input type="text" placeholder="Vencimiento"></input>
+            <input type="password" placeholder="Codigo de seguridad"></input>
+            <button type="submit">Comprar</button>
+        </section>
+        
     </main>
     <footer>
         <section class="grilla-footer">
@@ -66,7 +69,7 @@
 
             <div>
                 <p class="titulo_footer">SERVICIO AL CLIENTE</p>
-                <a href="https://autogestion.produccion.gob.ar/consumidores" class="social"><p>Defensa del consumidor</p></a>
+                <a href="https://autogestion.produccion.gob.ar/consumidores" class="social" target="blank"><p>Defensa del consumidor</p></a>
                 <p>Como cancelar una compra</p>
             </div>
             <div>
@@ -80,10 +83,10 @@
 
         <div class="logos">
 
-            <a href="https://youtube.com/channel/UCdnyRINr0-43MwmgKVeOgag" class="social"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://pin.it/6j4TzyC" class="social"><i class="fa-brands fa-pinterest"></i></a>
-            <a href="https://www.instagram.com/hairsy.lujoparatucabello/?igshid=YmMyMTA2M2Y%3D" class="social"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://youtube.com/channel/UCdnyRINr0-43MwmgKVeOgag" class="social" target="blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://pin.it/6j4TzyC" class="social"><i class="fa-brands fa-pinterest" target="blank"></i></a>
+            <a href="https://www.instagram.com/hairsy.lujoparatucabello/?igshid=YmMyMTA2M2Y%3D" class="social" target="blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Hairsy-101656439312920" class="social" target="blank"><i class="fa-brands fa-facebook"></i></a>
 
         </div>
             <div class="marcaRegistrada"><p>Hairsy Inc <i class="fa-solid fa-copyright"> 2022</i></p></div>
