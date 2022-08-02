@@ -98,13 +98,13 @@ main {
     margin-top: 250px;
     margin-bottom: 20px;
     padding: 20px 0 15px 0;
-    height: 100vh;
+   
     opacity: 1;
 }
 
 footer {
     width: 100vw;
-    margin-top: 400px;
+    margin-top: 50px;
 }
 
 .grilla-footer{

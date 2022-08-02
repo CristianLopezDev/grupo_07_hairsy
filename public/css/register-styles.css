@@ -142,6 +142,7 @@ h2 {
 /********************************************************************/
 footer {
     width: 100vw;
+    margin-top:  50px;
 }
 
 .grilla-footer{
@@ -160,6 +161,10 @@ footer {
 }
 p{
     font-size: 12px;
+}
+
+.logos {
+    text-align: center;
 }
 
 
