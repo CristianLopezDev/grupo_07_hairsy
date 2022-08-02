@@ -10,8 +10,6 @@ body{
     font-family: roboto;
 }
 header {
-    background: url(/public/images/Fondo\ Header.jpg);
-    
     width: 100vw;
     display: flex;
     justify-content: space-between;

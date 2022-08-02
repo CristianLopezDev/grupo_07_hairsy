@@ -17,7 +17,7 @@ const controller = {
         res.render('home')
     },
     product: (req, res) => {
-        const products = products.find((product) => product.id == req.params.id )
+        const products = product.find(p => product.id === req.params.id );
         res.render('product')
     },
     
