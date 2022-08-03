@@ -60,6 +60,10 @@ main {
 }
 /*******************************video************************************************/
 
+.ofertas {
+    
+   
+}
 
 .fotos {
     z-index: 1;
@@ -196,7 +200,10 @@ p{
     .fotos {
         flex-direction: column; 
      }
-   
+   .ofertas {
+        display: flex;
+        top: 200px;
+   }
 }
 
 @media (min-width: 460px){
