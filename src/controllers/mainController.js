@@ -22,7 +22,7 @@ const controller = {
     },
     
     cart: (req, res) => {
-        res.render('cart')
+        res.render('/user/cart')
     },
     
     login: (req, res) => {
@@ -37,5 +37,6 @@ const controller = {
 
 
 module.exports = controller
+
 
 

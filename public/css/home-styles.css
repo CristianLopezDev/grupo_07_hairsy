@@ -60,10 +60,7 @@ main {
 }
 /*******************************video************************************************/
 
-.ofertas {
-    
-   
-}
+
 
 .fotos {
     z-index: 1;
@@ -201,17 +198,33 @@ p{
         flex-direction: column; 
      }
    .ofertas {
-        display: flex;
+        display: none;
         top: 200px;
    }
+   .logo {
+    height: 13vh;
+    width: 18vh;
+    margin-top: 17px;
+}
 }
 
 @media (min-width: 460px){
     /* Tablets */
     .fotos {
-        flex-direction: column; 
+        flex-direction: column;
+      
+        
      }
+     .ofertas {
+        display: none;
    
+    }
+
+    .logo {
+        height: 13vh;
+        width: 18vh;
+        margin-top: 16px;
+    }
 }
 @media (min-width: 768px){
     /* Laptop */
@@ -231,6 +244,10 @@ p{
     }
     .nav li a {
         color: white;
+    }
+    .ofertas {
+        display: flex;
+   
     }
 }
 

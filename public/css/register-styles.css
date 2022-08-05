@@ -112,7 +112,13 @@ h2 {
     font-size: 15px;
 }
 
+.logo {
+    display: flex;
+    width: 15%;
+    padding: 5px;
+   
 
+}
 
 .login-box input {
     width: 100%;
@@ -174,6 +180,12 @@ p{
     .fotos {
         flex-direction: column; 
      }
+     .logo {
+        height: 13vh;
+        width: 18vh;
+        margin-top: 22px;
+    }
+   
    
 }
 
@@ -183,6 +195,11 @@ p{
     .fotos {
         flex-direction: column; 
      }
+     .logo {
+        height: 13vh;
+        width: 18vh;
+        margin-top: 20px;
+    }
    
 }
 @media (min-width: 768px){

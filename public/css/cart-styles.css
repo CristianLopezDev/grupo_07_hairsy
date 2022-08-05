@@ -178,5 +178,71 @@ h3{
 }
 
 
+.boxEnvio {
+    display: flex;
+}
+
+.cantidad {
+    margin-left: 100px;
+}
+
+.boxPago1 {
+    height: 20px;
+    width: 180px;
+
+}
+
+.boxPago {
+    height: 20px;
+    width: 120px;
+
+}
+
+.pago {
+
+}
+
+.acumulador {
+    height: 20px;
+    width: 30px;
+}
+
+.product-img {
+    height: 300px;
+    width: 300px;
+
+}
+
+.main-cart {
+    display: flex;
+}
+
+
+
+@media (max-width: 460px){
+    /* Tablets */
+
+     .logo {
+        height: 13vh;
+        width: 18vh;
+        margin-top: 22px;
+    }
+   
+   
+}
+
+
+@media (min-width: 460px){
+    /* Tablets */
+   
+     .logo {
+        height: 13vh;
+        width: 18vh;
+        margin-top: 20px;
+    }
+   
+}
+
+
 
 
