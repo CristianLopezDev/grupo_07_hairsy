@@ -183,7 +183,7 @@ p{
      .logo {
         height: 13vh;
         width: 18vh;
-        margin-top: 22px;
+        margin-top: 10px;
     }
    
    
@@ -198,7 +198,11 @@ p{
      .logo {
         height: 13vh;
         width: 18vh;
-        margin-top: 20px;
+        margin-top: 10px
+    }
+
+    .blanco {
+        display: none;
     }
    
 }
@@ -211,7 +215,12 @@ p{
     .fotos {
         flex-direction: row; 
      }
-   
+     .negro {
+        display: flex;
+    }
+    .blanco {
+        display: none;
+    }
  
 
 }

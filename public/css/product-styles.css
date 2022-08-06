@@ -186,7 +186,7 @@ h3{
      .logo {
         height: 13vh;
         width: 18vh;
-        margin-top: 22px;
+        margin-top: 10px;
     }
    
 }
@@ -200,7 +200,7 @@ h3{
      .logo {
         height: 13vh;
         width: 18vh;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
 @media (min-width: 768px){
@@ -212,7 +212,12 @@ h3{
     .fotos {
         flex-direction: row; 
      }
-   
+     .negro {
+        display: none;
+    }
+    .blanco {
+        display: flex;
+    }
  
 
 }

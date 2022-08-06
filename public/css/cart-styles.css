@@ -30,6 +30,13 @@ header {
     padding: 5px;
 }
 
+.negro{
+    display: block;
+}
+
+.blanco {
+    display:none;
+}
 
 .nav li a {
     color: black;
@@ -225,7 +232,7 @@ h3{
      .logo {
         height: 13vh;
         width: 18vh;
-        margin-top: 22px;
+        margin-top: 10px;
     }
    
    
@@ -238,9 +245,9 @@ h3{
      .logo {
         height: 13vh;
         width: 18vh;
-        margin-top: 20px;
+        margin-top: 10px;
     }
-   
+    
 }
 
 
