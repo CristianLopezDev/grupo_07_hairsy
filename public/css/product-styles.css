@@ -21,6 +21,14 @@ header {
     color: white;
 }
 
+.negro{
+    display:block;
+}
+
+.blanco{
+    display:none;
+}
+
 .nav li a {
     text-decoration:none;
     padding:5px;
@@ -212,12 +220,7 @@ h3{
     .fotos {
         flex-direction: row; 
      }
-     .negro {
-        display: none;
-    }
-    .blanco {
-        display: flex;
-    }
+    
  
 
 }
