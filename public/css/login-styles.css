@@ -11,12 +11,48 @@ body{
 }
 
 header {
-    background: url(/public/images/Fondo\ Header.jpg);
-    background-size: 100%;
-    background-position-x: left;
-    border-bottom: 1px solid black;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    color: white;
+}
+
+
+.nav li a {
+    text-decoration:none;
+    padding:5px;
+    display:block;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    padding: 0px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 40px;
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+.social{
+    color: black;
 }
 
 .borde-logo {
@@ -24,111 +60,48 @@ header {
     }
 
 .logo {
-    
     display: flex;
     width: 15%;
     padding: 5px;
-
 }
 
-ul {
-   padding: 40px;
+.negro{
+    display: block;
+}
+
+.blanco {
+    display:none;
+}
+
+footer {
+    width: 100vw;
+    margin-top: 250px;
+}
+
+.grilla-footer{
     display: flex;
-    list-style: none;
-   
+    font-family: roboto;
+    padding: 20px;
+   text-align: center;
 }
 
-.tendencias {
-    margin-left: 60px;
-    font-weight: bold;
-    
+.titulo_footer{
+    font-size: 15px;
 }
 
-.descuentos {
-    font-weight: bold;
+p{
+    font-size: 12px;
 }
 
-.cart{
-    width: 10%;
-}
-
-.ayuda{
-    width: 25%;
-}
-
-.forms{
+.marcaRegistrada {
     display: flex;
+    flex-direction: row;
 }
 
-.cuenta {
-    width: 50%;
-}
 
-.login{
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.fotos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-}
-
-/*.foto1 {
-    width: 450px ;
-    height:400px;
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-}
-.foto2 {
-    width: 450px;
-    height: 400px; 
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-}
-.foto3 {
-    width: 450px;
-    height: 400px;
-    box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-}
-.foto4 {
-    width: 450px;
-    height: 400px;
-    /*box-shadow: 0px 15px 25px rgba (0,0,0,0.5);
-    cursor: pointer;
-    position: relative;
-}*/
-
-.img {
-    width: 100%;
-    height: 90%;
-    transition: all 500ms ease-out;
-}
-
-.capa{
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    align-items: center;
-}
-
-.foto1:hover > .capa{
-    opacity: 1;
-    visibility: visible;
-}
 
 
 main {
-    
-    background: url(/public/images/Fondo\ login1.jpeg) no-repeat center top;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -136,7 +109,9 @@ main {
 }
 
 .login-box {
-    background: rgb(250, 195, 195, 0.78);
+    background: #FFCB00;
+    margin-top: 200px;
+    border: 1.5px solid black;
     display: flex;
     align-items: center;
     width: 320px;
@@ -163,13 +138,13 @@ h2 {
 }
 
 .pregunta {
+    margin-left: 200px;
+    width: 300px;
     margin-bottom: 20px;
     color: blanchedalmond;
     display: flex;
-    width: 320px;
     position: relative;
     right: 80%;
-    font-size: 15px;
 }
 
 
@@ -192,9 +167,58 @@ h2 {
 
 }
 
+.logos {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+   
+}
 
-footer{ 
-    background: url(/public/images/Fondo\ Header.jpg);
 
-    padding: 2px;
+
+@media (max-width: 460px){
+    /* Tablets */
+    .fotos {
+        flex-direction: column; 
+     }
+     .logo {
+      height: 13vh;
+      width: 18vh;
+      margin-top: 10px;
+    }
+    .blanco {
+      display: none;
+    }
+   
+}
+
+
+@media (min-width: 460px){
+    /* Tablets */
+    .fotos {
+        flex-direction: column; 
+     }
+     .logo {
+         height: 13vh;
+         width: 18vh;
+         margin-top: 10px;
+     }
+ 
+     .blanco {
+         display: none;
+     }
+   
+}
+@media (min-width: 768px){
+    /* Laptop */
+   
+    video {
+        display: block;
+    }
+    .fotos {
+        flex-direction: row; 
+     }
+    
+ 
+
 }

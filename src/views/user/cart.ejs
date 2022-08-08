@@ -1,0 +1,58 @@
+<%- include('../partials/head') %>
+
+    <link href="/css/cart-styles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <%- include('../partials/header') %>
+
+            <main class="main-cart">
+                <section>
+                    <div class="product-img"><img src="/public/images/producto1.png"></div>
+                        <div class="boxEnvio">
+                            <div class="cantidad"><input class="acumulador" type="button" value="-" class="minus"><input class="acumulador" type="number" step="1" min="1" max=""
+                                name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                                inputmode=""><input class="acumulador" type="button" value="+" class="plus"></div>
+                            
+                            <div class="form_pago">
+                                <h5>Datos para envío</h5>
+                                <input type="text" placeholder="Dirección"></input>
+                                <input type="text" placeholder="Localidad"></input>
+                                <input type="text" placeholder="Codigo postal"></input>
+                                <button type="submit">Calcular envio</button>
+                                <h5>Rango horario para la entrega</h5>
+                                <div class="campos">
+                                    09 a 14 horas<input type="radio" name="horario" value="09 a 14">
+                                    14 a 19 horas<input type="radio" name="horario" value="14 a 19">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-icons">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </div>
+                        
+                        
+                        <div class ="pago" ><h5>Pago</h5>
+                            
+                            <input  class="boxPago1" type="text" placeholder="Nombre del titular"></input>
+                            <input  class="boxPago" type="text" placeholder="Numero de tarjeta"></input>
+                            <input  class="boxPago" type="text" placeholder="Vencimiento"></input>
+                            <input  class="boxPago" type="password" placeholder="Codigo de seguridad"></input>
+                            <button class="boxPago" type="submit">Comprar</button>
+                        </div>
+                        
+
+                </section>
+
+
+            </main>
+
+            <%- include('../partials/footer') %>
+
+    </body>
+
+    </html>
