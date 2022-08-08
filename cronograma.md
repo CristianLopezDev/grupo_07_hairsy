@@ -22,5 +22,5 @@ Sprint 4:
         ○ Edición
         ○ Eliminación 
 
-Prioridades:
+
 
