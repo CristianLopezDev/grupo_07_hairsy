@@ -29,6 +29,10 @@ app.use('/product', productRouter);
 
 app.use('/user', userRouter);
 
+//Capturo información de formulario e informo que recibe datos por body//
+app.use(express.urlencoded({ extended: false}));
+app.use(express.json());
+
 app.use((req, res, next) => {
     res.status(404).render('not-found');
 })

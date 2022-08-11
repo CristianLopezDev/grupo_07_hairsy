@@ -1,3 +1,9 @@
+const fs = require('fs');
+const path = require('path');
+
+const productsFilePath = path.join(__dirname, '../data/product.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 
 const productController = {
     product: function(req, res){
@@ -12,7 +18,8 @@ const productController = {
 
 	// Create - Form to create
 	create: (req, res) => {
-		// Do the magic
+		res.render('./product/productCreate')
+		//res.redirect('/home');
 	},
 	
 	// Create -  Method to store
