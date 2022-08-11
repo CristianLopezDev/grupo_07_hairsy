@@ -189,6 +189,15 @@ h3{
     display: flex;
 }
 
+.create {
+    display: flex;
+    margin-top: 250px;
+}
+
+.imagen {
+    
+}
+
 .cantidad {
     margin-left: 100px;
 }

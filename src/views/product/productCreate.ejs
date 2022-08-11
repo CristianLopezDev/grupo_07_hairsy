@@ -1,71 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../partials/head') %>
+    <link href="/css/cart-styles.css" rel="stylesheet">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="/css/register-styles.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a446d30822.js" crossorigin="anonymous"></script>
     <title>Hairsy</title>
+    </head>
 
-    <header>
-        <div class="logo">
-            <div class="borde-logo"><a href="/"><img class="negro" src="/public/images/logo2.png"><img class="blanco" src="/public/images/logo2b.png"></a>
-            </div>
-        </div>
-        <div>
-            <div class="header-menu">
-                <ul class="nav">    
-                    <li class="menu"><a href="#"><i class="fas fa-thin fa-bars"></i></a></li>
-                    <li class="wish-list"><a href="#"><i class="fas fa-thin fa-heart"></i></a></li>
-                    <li class="user"><a href="#"><i class="fas fa-thin fa-user"></i></a>
-                        <ul>
-                            <li><a href="/user/login">Login</a></li>
-                            <li><a href="/user/register">Register</a></li>
-                        </ul>
-                    </li>
-                    <li class="contact"><a href="#"><i class="fas fa-thin fa-headphones"></i></a></li>
-                    <li class="cart"><a href="/user/cart"><i class="fa-solid fa-cart-shopping"></a></i></li>
-                </ul>
-    
-            </div>
-    </header>
+    <body>
 
-    <form class="product-form" action="/product/create" method="post" enctype="multipart/form-data">
-        <div class="row product-detail">
-            <div class="col-12 col-md-6">
-                <label for="name" class="form-label">Nombre del producto:</label>
-                <input type="text" id="name" name="name" placeholder="Ej: Tintura" class="form-input">
-            </div>
-            <div class="col-12 col-md-6">
-                <label for="price" class="form-label">Precio del producto:</label>
-                <input type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input">
-            </div>
-            <div class="#">
-                <label for="discount" class="form-label">Descuento:</label>
-                <input type="text" id="discount" name="discount" placeholder="Ej: 15" class="form-input">
-            </div>
-            <div class="#">
-                <label for="file" class="form-label">Imagen:</label>
-                <input type="file" id="image" name="image" class="form-input">
-            </div>
-            <div class="col-12 col-md-6">
-                <label for="category" class="form-label">Categoría:</label>
-                <select name="category" id="category" class="form-input">
-                    <option value="">Elegí</option>
-                    <option value="in-sale">En oferta</option>
-                    <option value="visited">Últimos agregados</option>
-                </select>
-            </div>
-            <div class="col-12">
-                <label for="description" class="form-label">Descipción:</label>
-                <textarea name="description" id="description" class="form-input"></textarea>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="buy-now-button">Guardar producto</button>
-            </div>
-        </div>
-    </form>
+        <%- include('../partials/header') %>
+
+            <div class="create">
+            <div class="Imagen">
+                <div class="#">
+                    <label for="file" class="form-label">Imagen:</label>
+                    <input type="file" id="image" name="image" class="form-input">
+                    <img  class="product-img" src="/public/images/producto1.png">
+                </div>
+            </div>    
+                <form  action="/product/create" method="post" enctype="multipart/form-data">
+                <div class="row product-detail">
+                    <div >
+                        <label for="name" class="form-label">Nombre del producto:</label>
+                        <input type="text" id="name" name="name" placeholder="Ej: Tintura" class="form-input">
+                    </div>
+                    <div >
+                        <label for="price" class="form-label">Precio del producto:</label>
+                        <input type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input">
+                    </div>
+                    <div >
+                        <label for="discount" class="form-label">Descuento:</label>
+                        <input type="text" id="discount" name="discount" placeholder="Ej: 15" class="form-input">
+                    </div>
+                    
+                    <div >
+                        <label for="category" class="form-label">Categoría:</label>
+                        <select name="category" id="category" class="form-input">
+                            <option value="">Elegí</option>
+                            <option value="in-sale">En oferta</option>
+                            <option value="visited">Últimos agregados</option>
+                        </select>
+                    </div>
+                    <div >
+                        <label for="description" class="form-label">Descipción:</label>
+                        <textarea name="description" id="description" class="form-input"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="buy-now-button">Guardar producto</button>
+                    </div>
+                </div>
+            </form>
+        </div>  
+
+            <%- include('../partials/footer') %>
+
+    </body>
