@@ -20,7 +20,7 @@ const productController = {
 	// Create - Form to create
 	create: (req, res) => {
 		res.render('product/productCreate')
-		//res.redirect('/home');
+		//res.redirect('/');
 	},
 	
 	// Create -  Method to store
@@ -30,10 +30,10 @@ const productController = {
 
 	// Update - Form to edit
 	edit: (req, res) => {
-		res.render('./product/productEdit')
-		// Do the magic
-
-	},
+        const product = products.find(element => element.id == req.params.id); 
+        res.render('/product/productEdit', {product});
+		res.redirect('/');
+    },
 	// Update - Method to update
 	update: (req, res) => {
 		// Do the magic
@@ -41,7 +41,7 @@ const productController = {
 
 	// Delete - Delete one product from DB
 	destroy : (req, res) => {
-		// Do the magic
+		res.render('product/productDelete')
 	}
 };
 
