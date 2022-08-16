@@ -83,6 +83,7 @@ a {
     text-align: center;
     font-size: 14px;
     font-family: roboto;
+    margin-top: 50px;
 }
 
 body{
@@ -96,7 +97,22 @@ main{
 .main_product{
     display: flex;
     flex-direction: column;
+   
 }
+
+.main_product1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.description {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
 
 .titulo{
     font-size: 20px;
@@ -221,6 +237,30 @@ h3{
         flex-direction: row; 
      }
     
- 
+     .main_product{
+        display: flex;
+       
+        flex-wrap: wrap;
+       
+    }     
+
+    .principales {
+
+        display: flex;
+        
+
+    }
+
+    .relacionados{
+        display: flex;
+        max-width: 25%;
+        
+    }    
+    
+    .cart_button{
+        
+        height: 36px;
+      
+    }
 
 }

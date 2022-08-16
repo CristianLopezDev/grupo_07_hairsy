@@ -13,12 +13,13 @@ const productController = {
 
 	// Detail - Detail from one product
 	detail: (req, res) => {
+		res.render('product/productDetail')
 		// Do the magic
 	},
 
 	// Create - Form to create
 	create: (req, res) => {
-		res.render('./product/productCreate')
+		res.render('product/productCreate')
 		//res.redirect('/home');
 	},
 	
@@ -29,7 +30,9 @@ const productController = {
 
 	// Update - Form to edit
 	edit: (req, res) => {
+		res.render('./product/productEdit')
 		// Do the magic
+
 	},
 	// Update - Method to update
 	update: (req, res) => {

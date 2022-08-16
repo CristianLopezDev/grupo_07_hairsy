@@ -102,7 +102,6 @@ ul {
 
 main {
     
-    margin-top: 250px;
     margin-bottom: 20px;
     padding: 20px 0 15px 0;
    
@@ -191,7 +190,7 @@ h3{
 
 .create {
     display: flex;
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
 .imagen {
@@ -233,10 +232,16 @@ h3{
     display: flex;
 }
 
+.titulo {
+    display: flex;
+    justify-content: center;
+   
+    margin-top: 150px;
+}
 
 
 @media (max-width: 460px){
-    /* Tablets */
+    /* Celu */
 
      .logo {
         height: 13vh;
@@ -244,7 +249,23 @@ h3{
         margin-top: 10px;
     }
    
+    .create {
+        margin-left: 45px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+     
+    .Imagen {
+
+        margin-left: 45px;
+    }
    
+    .contenedor1 {
+
+      
+        justify-content: center;
+    }
 }
 
 
@@ -256,7 +277,32 @@ h3{
         width: 18vh;
         margin-top: 10px;
     }
-    
+
+    .create {
+       
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+     
+    .Imagen {
+
+        
+    }
+    .contenedor1 {
+
+      
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .create {
+       
+        flex-wrap: nowrap;
+    }
+
 }
 
 
