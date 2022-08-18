@@ -142,18 +142,14 @@ a {
 }
 
 .logos {
-    
     display: flex;
     padding: 20px;
     size: 2em;
     align-items: center;
     text-align: center;
-    
-   
 }
-
-
 /************************FOOTER***************************************************************/
+
 footer {
     position: absolute;
     width: 100vw;
@@ -202,8 +198,8 @@ p{
         top: 200px;
    }
    .logo {
-    height: 13vh;
-    width: 18vh;
+        height: 13vh;
+        width: 18vh;
     margin-top: 17px;
 }
 .blanco {

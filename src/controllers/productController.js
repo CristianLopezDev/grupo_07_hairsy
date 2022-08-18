@@ -30,20 +30,51 @@ const productController = {
 
 	// Update - Form to edit
 	edit: (req, res) => {
-        const product = products.find(element => element.id == req.params.id); 
-        res.render('/product/productEdit', {product});
-		res.redirect('/');
+        const editProduct = products.find((prod) => {
+			return prod.id == req.params.id;
+		})
+        res.render('productEdit', {editProduct});
     },
 	// Update - Method to update
 	update: (req, res) => {
-		// Do the magic
+		const editProduct = products.find((prod) => {
+			return prod.id == req.params.id
+		});
+
+		const prodIndex = products.findIndex((p) => p.id == editedProduct.id);
+
+		const updatedProduct = {
+			id: editedProduct.id,
+			name: req.body.name,
+			price: Number(req.body.price),
+			discount: Number(req.body.discount),
+			category: req.body.category,
+			description: req.body.description,
+			image: req.file ? req.file.filename : editedProduct.image
+		}
+
+		products[prodIndex] = updatedProduct;
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '))
+
+		res.redirect('/product');
 	},
 
 	// Delete - Delete one product from DB
-	destroy : (req, res) => {
-		res.render('product/productDelete')
+	destroy: (req, res) => {
+		const deletedProduct = products.find((prod) => {
+			return prod.id == req.params.id;
+		})
+
+	const prodIndex = products.findIndex((p) = p.id == deletedProduct.id);
+
+	products.slice(prodIndex,1);
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
+
+		res.redirect('/product');
+
 	}
-};
+}
 
-module.exports = productController;
-
+module.exports = productController 
