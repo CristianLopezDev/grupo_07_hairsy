@@ -17,7 +17,8 @@ const upload = multer({ storage });
 const productController = require('../controllers/productController');
 
 // /*** GET ALL PRODUCTS ***/ 
-router.get('/', productController.product); 
+// router.get('/', productController.product); 
+router.get('/:category', productController.product); 
 
 // /*** CREATE ONE PRODUCT ***/
 router.get('/create', productController.create);
