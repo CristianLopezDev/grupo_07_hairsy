@@ -1,20 +1,25 @@
 const fs = require('fs');
+const { restart } = require('nodemon');
 const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../data/product.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 
+	//all products
 const productController = {
     product: function(req, res){
-        //TODO:Llamar los productos y pasarlos a esta vista//
-        res.render('product/product');
+        const care = products.filter(product => product.category === "care");
+		const color = products.filter(product => product.category === "color");
+		const styling = products.filter(product => product.category === "styling");
+		const barber = products.filter(product => product.category === "barber")
+        res.render('product/product', { care, color, styling, barber });
     },
 
 	// Detail - Detail from one product
 	detail: (req, res) => {
-		res.render('product/productDetail')
-		// Do the magic
+		const product = products.find(element => element.id == req.params.id);
+		res.render ('detail', {product})
 	},
 
 	// Create - Form to create
@@ -25,7 +30,7 @@ const productController = {
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		// Do the magic
+		res.send(' Producto creado con exito ')
 	},
 
 	// Update - Form to edit

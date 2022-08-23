@@ -12,95 +12,35 @@
                                 <p class="banner">ENVIOS GRATIS A PARTIR DE $1000!</p>
                                 <section class="main_product">
                                         <div class="principales">
+                                               <% color.forEach (element => { %>
                                                 <div class="productos">
-                                                        <h5 class="titulo">Lorem Ipsum</h5>
-                                                        <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                                <p class="descripcion">$3.500</p>
+                                                        <h5 class="titulo"><%= element.name %> </h5>
+                                                                <a href="/product/detail/<%= element.id %>">
+                                                                <img src="/images/products/<%= element.image %>">
+                                                                </a>
+                                                                <p class="descripcion">$<%= element.price %></p>
                                                                 <p class="descripcion">Impuestos incluidos</p>
-                                                                <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
+                                                                <a href="user/cart">
+                                                                <button class="cart_button">Agregar al carrito</button>
+                                                                </a>
                                                         
                                                 </div>
-                                                <div class="productos">
-                                                        <h5 class="titulo">Lorem Ipsum</h5>
-                                                        <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                                <p class="descripcion">$3.500</p>
-                                                                <p class="descripcion">Impuestos incluidos</p>
-                                                                <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
-                                                        
-                                                </div>
-                                                <div class="productos">
-                                                        <h5 class="titulo">Lorem Ipsum</h5>
-                                                        <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                                <p class="descripcion">$3.500</p>
-                                                                <p class="descripcion">Impuestos incluidos</p>
-                                                                <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
-                                                        
-                                                </div> <div class="productos">
-                                                        <h5 class="titulo">Lorem Ipsum</h5>
-                                                        <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                                <p class="descripcion">$3.500</p>
-                                                                <p class="descripcion">Impuestos incluidos</p>
-                                                                <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
-                                                        
-                                                </div>
-                                                
-                                               
-                                                
-                                                
-                                               
+                                                <% }) %>
                                         </div>
                                 </section>
 
                                 <div class="relacionados">
                                         <h4>También te puede interesar</h4>
+                                        <% care.forEach (element => { %>
                                         <div class="productos">
-                                                <h5 class="titulo">Lorem Ipsum</h5>
-                                                <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                        <p class="descripcion">$3.500</p>
+                                                <h5 class="titulo"><%= element.name %></h5>
+                                                <a href="product/detail"><img src="/images/products/<%= element.image %>"></a>
+                                                        <p class="descripcion">$<%= element.price %></p>
                                                         <p class="descripcion">Impuestos incluidos</p>
                                                         <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
                                                 
                                         </div>
-                                        <div class="productos">
-                                                <h5 class="titulo">Lorem Ipsum</h5>
-                                                <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                        <p class="descripcion">$3.500</p>
-                                                        <p class="descripcion">Impuestos incluidos</p>
-                                                        <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
-                                                
-                                        </div>
-                                        <div class="productos">
-                                                <h5 class="titulo">Lorem Ipsum</h5>
-                                                <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                        <p class="descripcion">$3.500</p>
-                                                        <p class="descripcion">Impuestos incluidos</p>
-                                                        <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
-                                                
-                                        </div>
-                                        <div class="productos">
-                                                <h5 class="titulo">Lorem Ipsum</h5>
-                                                <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                        <p class="descripcion">$3.500</p>
-                                                        <p class="descripcion">Impuestos incluidos</p>
-                                                        <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
-                                                
-                                        </div>
-                                        <div class="productos">
-                                                <h5 class="titulo">Lorem Ipsum</h5>
-                                                <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                        <p class="descripcion">$3.500</p>
-                                                        <p class="descripcion">Impuestos incluidos</p>
-                                                        <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
-                                                
-                                        </div>
-                                        <div class="productos">
-                                                <h5 class="titulo">Lorem Ipsum</h5>
-                                                <a href="product/detail"><img src="/public/images/product.png"></a>
-                                                        <p class="descripcion">$3.500</p>
-                                                        <p class="descripcion">Impuestos incluidos</p>
-                                                        <a href="user/cart">    <button class="cart_button">Agregar al carrito</button></a>
-                                                
-                                        </div>
+                                        <% }) %>
                                        
 
                                 </div>
