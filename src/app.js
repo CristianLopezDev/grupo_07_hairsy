@@ -1,17 +1,13 @@
 const express = require("express");
-
 const app = express();
-
 const path = require("path");
-
 const mainRouter = require("./routes/mainRouter")
-
 const productRouter = require('./routes/productRouter');
-
 const userRouter = require('./routes/userRouter');
-
 const methodOverride = require('method-override');
 const { rmSync } = require("fs");
+
+
 
 app.use(methodOverride('_method'));
 
@@ -29,7 +25,7 @@ app.use('/product', productRouter);
 
 app.use('/user', userRouter);
 
-//Capturo información de formulario e informo que recibe datos por body//
+//Capturo información de formulario en forma de obj literal
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 
@@ -40,6 +36,8 @@ app.use((req, res, next) => {
 app.listen(3000,(req,res) =>{
     console.log("Servidor corriendo en http://localhost:3000")
 })
+
+module.exports = app;
 
 
 

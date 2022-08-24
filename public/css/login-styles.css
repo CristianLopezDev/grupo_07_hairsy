@@ -1,13 +1,17 @@
 * {
     box-sizing: border-box;
     width: 100%;
-    margin: 0px ;
-    padding: 2px;
-    
+    margin: 0px;
+    border: 0px;
+    padding-top: 0.1px;
 }
 
 body{
     font-family: roboto;
+}
+
+.cart{
+    width: 10%;
 }
 
 header {
@@ -168,10 +172,11 @@ h2 {
 }
 
 .logos {
-    align-items: center;
     display: flex;
     padding: 20px;
-   
+    size: 2em;
+    align-items: center;
+    text-align: center;
 }
 
 
