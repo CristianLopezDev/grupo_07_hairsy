@@ -31,13 +31,23 @@ const productController = {
 
 	// Create - Form to create
 	create: (req, res) => {
-		res.render('product/productCreate')
+		res.render('../product/create')
 		//res.redirect('/');
 	},
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		res.send(' Producto creado con exito ')
+		const productsClone = product;
+		const newProduct = {
+			name: req.body.name,
+			description: req.body.description,
+			price: req.body.price,
+			category: req.body.category,
+			image: req.file?.filename,
+		};
+		productsClone.push(newProduct);
+		fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, ' '));
+		res.redirect ('/product');
 	},
 
 	// Update - Form to edit

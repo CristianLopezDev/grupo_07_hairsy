@@ -2,15 +2,17 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 
+//Multer        
 const storage = multer.diskStorage( {
     destination: function (req, file, cb) {
-        cb(null, '  /public/images/products')
+        cb(null, '../public/images/products')
     },
     filename: function (req, file, cb) {
         cb(null, file.fieldName + '-' + Date.now());
     }
 });
 
+//Variable para Multer
 const upload = multer({ storage });
 
 //#######Controller required#######//
