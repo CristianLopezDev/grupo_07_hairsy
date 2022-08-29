@@ -14,12 +14,6 @@ const productController = {
 		
 		const relatedProducts = products.filter(product => product.category === req.params.category);
 
-		
-		// const care = products.filter(product => product.category === "care");
-		// const color = products.filter(product => product.category === "color");
-		// const styling = products.filter(product => product.category === "styling");
-		// const barber = products.filter(product => product.category === "barber")
-        //res.render('product/product', { care, color, styling, barber });
 		res.render('product/product', {filteredProducts, relatedProducts});
     },
 

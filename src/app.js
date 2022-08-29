@@ -6,6 +6,7 @@ const productRouter = require('./routes/productRouter');
 const userRouter = require('./routes/userRouter');
 const methodOverride = require('method-override');
 const { rmSync } = require("fs");
+const session = require('express-session');
 
 
 
@@ -24,6 +25,8 @@ app.use('/',mainRouter)
 app.use('/product', productRouter);
 
 app.use('/user', userRouter);
+
+app.use(session( {secret: "Nuestro mensaje secreto"}));
 
 //Capturo información de formulario en forma de obj literal
 app.use(express.urlencoded({ extended: false}));
