@@ -82,7 +82,7 @@ main {
     display: flex;
     align-items: center;
     width: 320px;
-    height: 450px;
+    height: 490px;
     flex-direction: column;
     transform: translate( -50%,-50%);
     position: relative;
