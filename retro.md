@@ -118,3 +118,7 @@ Utilizando la metodología estrella de mar, en la retrospectiva salió lo siguie
 
 ## STOP DOING
 - Decir que vamos a hacer las cosas de tal manera de llegar a tiempo con las entregas y no poder cumplirlo.
+
+
+
+ascasc
