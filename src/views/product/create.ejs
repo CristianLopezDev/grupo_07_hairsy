@@ -7,6 +7,7 @@
     <body>
 
         <%- include('../partials/header') %>
+        <h4></h4>
         <div class="contenedor1">   
         <h2 class="titulo">Creacion de Productos</h2>
             <div class="create">
@@ -17,7 +18,7 @@
                     <img  class="product-img" src="/public/images/producto1.png">
                 </div>
             </div>    
-                <form  action="/product/create" method="post" enctype="multipart/form-data">
+                <form  action="product/create" method="post" enctype="multipart/form-data">
                 <div class="row product-detail">
                     <div >
                         <label for="name" class="form-label">Nombre del producto:</label>
@@ -41,7 +42,7 @@
                         </select>
                     </div>
                     <div >
-                        <label for="description" class="form-label">Descipción:</label>
+                        <label for="description" class="form-label">Descripción:</label>
                         <textarea name="description" id="description" class="form-input"></textarea>
                     </div>
                     <div>

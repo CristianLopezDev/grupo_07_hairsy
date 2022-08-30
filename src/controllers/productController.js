@@ -5,11 +5,11 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/product.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 	//all products
-const productController = {
-    product: function(req, res)
-	{
+const controller = {
+    product: (req, res) => {
 		const filteredProducts = products.filter(product => product.category === req.params.category);
 		
 		const relatedProducts = products.filter(product => product.category === req.params.category);
@@ -20,18 +20,17 @@ const productController = {
 	// Detail - Detail from one product
 	detail: (req, res) => {
 		const product = products.find(element => element.id == req.params.id);
-		res.render ('detail', {product})
+		res.render ('./product/detail', {product})
 	},
 
 	// Create - Form to create
 	create: (req, res) => {
-		res.render('../product/create')
-		//res.redirect('/');
+		res.render ('create')
 	},
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		const productsClone = product;
+		const productsClone = products;
 		const newProduct = {
 			name: req.body.name,
 			description: req.body.description,
@@ -57,16 +56,16 @@ const productController = {
 			return prod.id == req.params.id
 		});
 
-		const prodIndex = products.findIndex((p) => p.id == editedProduct.id);
+		const prodIndex = products.findIndex((p) => p.id == editProduct.id);
 
 		const updatedProduct = {
-			id: editedProduct.id,
+			id: editProduct.id,
 			name: req.body.name,
 			price: Number(req.body.price),
 			discount: Number(req.body.discount),
 			category: req.body.category,
 			description: req.body.description,
-			image: req.file ? req.file.filename : editedProduct.image
+			image: req.file ? req.file.filename : editProduct.image
 		}
 
 		products[prodIndex] = updatedProduct;
@@ -78,6 +77,8 @@ const productController = {
 
 	// Delete - Delete one product from DB
 	destroy: (req, res) => {
+		res.render ('./product/productDelete');
+
 		const deletedProduct = products.find((prod) => {
 			return prod.id == req.params.id;
 		})
@@ -93,4 +94,4 @@ const productController = {
 	}
 }
 
-module.exports = productController 
+module.exports = controller 
