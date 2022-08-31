@@ -12,7 +12,7 @@ body{
 }
 
 header {
-    width: 100vw;
+    
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -20,6 +20,9 @@ header {
     backdrop-filter: blur(5px);
     z-index: 100;
     color: white;
+    top: 0;
+    left: 0;
+    right:0;
 }
 
 .cart{

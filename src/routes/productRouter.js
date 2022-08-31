@@ -20,7 +20,6 @@ const productController = require('../controllers/productController');
 
 // /*** GET ALL PRODUCTS ***/ 
 // router.get('/', productController.product); 
-router.get('/:category', productController.product); 
 
 // /*** CREATE ONE PRODUCT ***/
 router.get('/create', productController.create);
@@ -36,5 +35,8 @@ router.put('/edit/:id', productController.update);
 // /*** DELETE ONE PRODUCT***/ 
 router.get('/productDelete', productController.destroy);
 router.delete('/productDelete', productController.destroy) 
+
+router.get('/:category', productController.product); 
+
 
 module.exports = router;
