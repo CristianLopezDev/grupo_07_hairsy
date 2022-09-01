@@ -8,102 +8,8 @@
 
 body{
     font-family: roboto;
+    background: url(/public/images/products/fondoLogin.jpeg);
 }
-
-.cart{
-    width: 10%;
-}
-
-header {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background: transparent;
-    backdrop-filter: blur(5px);
-    z-index: 100;
-    color: white;
-}
-
-
-.nav li a {
-    text-decoration:none;
-    padding:5px;
-    display:block;
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-    padding: 0px;
-}
-
-.nav li:hover > ul {
-    display:block;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-ul {
-    padding: 40px;
-    display: flex;
-    list-style: none;
-    color: white;
-}
-
-.social{
-    color: black;
-}
-
-.borde-logo {
-    padding: 0px;
-    }
-
-.logo {
-    display: flex;
-    width: 15%;
-    padding: 5px;
-}
-
-.negro{
-    display: block;
-}
-
-.blanco {
-    display:none;
-}
-
-footer {
-    width: 100vw;
-    margin-top: 250px;
-}
-
-.grilla-footer{
-    display: flex;
-    font-family: roboto;
-    padding: 20px;
-   text-align: center;
-}
-
-.titulo_footer{
-    font-size: 15px;
-}
-
-p{
-    font-size: 12px;
-}
-
-.marcaRegistrada {
-    display: flex;
-    flex-direction: row;
-}
-
-
-
 
 main {
     background-size: cover;
@@ -113,7 +19,8 @@ main {
 }
 
 .login-box {
-    background: #FFCB00;
+    /*background: #FFCB00;*/
+    
     margin-top: 200px;
     border: 1.5px solid black;
     display: flex;
@@ -128,6 +35,8 @@ main {
     box-sizing: border-box;
     padding: 30px 30px;
     border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(5px);
 
 }
 
@@ -171,13 +80,6 @@ h2 {
 
 }
 
-.logos {
-    display: flex;
-    padding: 20px;
-    size: 2em;
-    align-items: center;
-    text-align: center;
-}
 
 
 
@@ -186,15 +88,6 @@ h2 {
     .fotos {
         flex-direction: column; 
      }
-     .logo {
-      height: 13vh;
-      width: 18vh;
-      margin-top: 10px;
-    }
-    .blanco {
-      display: none;
-    }
-   
 }
 
 
@@ -203,16 +96,6 @@ h2 {
     .fotos {
         flex-direction: column; 
      }
-     .logo {
-         height: 13vh;
-         width: 18vh;
-         margin-top: 10px;
-     }
- 
-     .blanco {
-         display: none;
-     }
-   
 }
 @media (min-width: 768px){
     /* Laptop */

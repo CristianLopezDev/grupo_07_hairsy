@@ -1,6 +1,8 @@
 <%- include('../partials/head') %> 
     
 <link href="/css/product-styles.css" rel="stylesheet">
+<link href="/css/header.css" rel="stylesheet">
+<link href="/css/footer.css" rel="stylesheet">
 
 </head>
 
@@ -11,13 +13,13 @@
     <main>
         <p class="banner">ENVIOS GRATIS A PARTIR DE $1000!</p>
         <section class="main_product1">
-                  <div class="contenedor">  <h5 class="titulo"><%= element.name %> </h5>
-                    <img src="/public/images/<%= element.image %> ">
-                    <p class="descripcion">$<%= element.price %> </p>
+                  <div class="contenedor">  <h5 class="titulo"></h5>
+                    <img src="/images/products/<%= product.image %> ">
+                    <p class="descripcion">$ <%= product.price %> </p>
                     <p class="descripcion">Impuestos incluidos</p>
                     <button class="cart_button">Agregar al carrito</button>
                     </div>  
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sed quos porro. Quas eos repellendus deserunt rem esse veritatis placeat deleniti iure alias vel, cum illo et facere quo magni.</div>
+            <div class="description"><%= product.description %> </div>
         
     </main>
     

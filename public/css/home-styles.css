@@ -6,18 +6,14 @@
     text-decoration: none;
     
 }
-/*color*/
-/* #ffcb00 amarillo */
 
 /********************video***********************/
 body{
     background: url(/public/images/abstract1.mp4);
     font-family: roboto;
-
 }
 
-video {
-
+video { 
     display: none;
 }
 
@@ -45,8 +41,6 @@ main {
     top: 0;
     left: 0;
     z-index: 11;
-    /*background:rgba(255, 169, 216, 0.486);*/
-
 }
 
 #background video {
@@ -73,67 +67,8 @@ main {
 }
 
 
-/****************************HEADER*************************************************/
-
-header {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background: transparent;
-    backdrop-filter: blur(5px);
-    z-index: 100;
-    color: white;
-}
-
-.borde-logo {
-    padding: 0px;
-    }
-
-.logo {
-    display: flex;
-    width: 15%;
-    padding: 5px;
-   
-
-}
-ul {
-    padding: 40px;
-    display: flex;
-    list-style: none;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-
-.nav li a {
-    color: black;
-    text-decoration:none;
-    padding:5px;
-    display:block;
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-    padding: 0px;
-}
-
-.nav li:hover > ul {
-    display:block;
-}
-
 
 /***************************************************************************************/
-
-.cart{
-    width: 10%;
-}
 
 .img {
     width: 100%;
@@ -141,52 +76,6 @@ a {
     transition: all 500ms ease-out;
 }
 
-.logos {
-    display: flex;
-    padding: 20px;
-    size: 2em;
-    align-items: center;
-    text-align: center;
-}
-/************************FOOTER***************************************************************/
-
-footer {
-    position: absolute;
-    width: 100vw;
-    margin-top: 50px;
-}
-
-.grilla-footer{
-    display: flex;
-    font-family: roboto;
-    padding: 20px;
-   text-align: center;
-}
-
-.titulo_footer{
-    font-size: 15px;
-}
-p{
-    font-size: 12px;
-}
-
-.marcaRegistrada {
-    display: flex;
-    flex-direction: row;
-}
-
-.social{
-    color: black;
-}
-
-/***********************MEDIA QUERY*****************************************************************/
-/*@media (max-width: 460px){
-    /* Tablets 
-    .fotos {
-        flex-direction: column; 
-     }
-   
-}*/
 
 @media (max-width: 460px){
     /* Mobile */
@@ -197,14 +86,6 @@ p{
         display: none;
         top: 200px;
    }
-   .logo {
-        height: 13vh;
-        width: 18vh;
-    margin-top: 17px;
-}
-.blanco {
-    display: none;
-}
 }
 
 @media (min-width: 460px){
@@ -218,17 +99,8 @@ p{
         display: none;
    
     }
-
-    .logo {
-        height: 13vh;
-        width: 18vh;
-        margin-top: 16px;
-    }
-
-    .blanco {
-        display: none;
-    }
 }
+
 @media (min-width: 768px){
     /* Laptop */
    
@@ -242,21 +114,9 @@ p{
         flex-direction: row; 
         position: absolute;
      }
-     footer {
-        margin-top: 0px;
-    }
-    .nav li a {
-        color: white;
-    }
     .ofertas {
         display: flex;
    
-    }
-    .negro {
-        display: none;
-    }
-    .blanco {
-        display: flex;
     }
 }
 
