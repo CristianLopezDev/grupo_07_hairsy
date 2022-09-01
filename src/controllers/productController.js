@@ -48,7 +48,7 @@ const controller = {
         const editProduct = products.find((prod) => {
 			return prod.id == req.params.id;
 		})
-        res.render('productEdit', {editProduct});
+        res.render('edit', {editProduct});
     },
 	// Update - Method to update
 	update: (req, res) => {
@@ -77,7 +77,7 @@ const controller = {
 
 	// Delete - Delete one product from DB
 	destroy: (req, res) => {
-		res.render ('./product/productDelete');
+		res.render ('./product/delete');
 
 		const deletedProduct = products.find((prod) => {
 			return prod.id == req.params.id;

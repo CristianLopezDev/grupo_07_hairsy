@@ -9,60 +9,8 @@
 
 body{
     font-family: roboto;
+
 }
-header {
-    
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background: transparent;
-    backdrop-filter: blur(5px);
-    z-index: 100;
-    color: white;
-    top: 0;
-    left: 0;
-    right:0;
-}
-
-.nav li a {
-    text-decoration:none;
-    padding:5px;
-    display:block;
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-    padding: 0px;
-}
-
-.nav li:hover > ul {
-    display:block;
-}
-
-
-ul {
-    padding: 40px;
-    display: flex;
-    list-style: none;
-    color: black;
-}
-
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-
-.cart{
-    width: 10%;
-}
-
-
-
 
 .img {
     width: 100%;
@@ -115,13 +63,6 @@ h2 {
     font-size: 15px;
 }
 
-.logo {
-    display: flex;
-    width: 15%;
-    padding: 5px;
-   
-
-}
 
 .login-box input {
     width: 100%;
@@ -141,41 +82,6 @@ h2 {
 
 }
 
-.logos {
-    align-items: center;
-    display: flex;
-    padding: 20px;
-   
-}
-
-/********************************************************************/
-footer {
-    width: 100vw;
-    margin-top:  50px;
-}
-
-.grilla-footer{
-    display: flex;
-    font-family: roboto;
-    padding: 20px;
-   text-align: center;
-}
-
-.social{
-    color: black;
-}
-
-.titulo_footer{
-    font-size: 15px;
-}
-p{
-    font-size: 12px;
-}
-
-.logos {
-    text-align: center;
-}
-
 .product-form{
     margin-top: 300px;
 }
@@ -187,13 +93,6 @@ p{
     .fotos {
         flex-direction: column; 
      }
-     .logo {
-        height: 13vh;
-        width: 18vh;
-        margin-top: 10px;
-    }
-   
-   
 }
 
 
@@ -202,16 +101,7 @@ p{
     .fotos {
         flex-direction: column; 
      }
-     .logo {
-        height: 13vh;
-        width: 18vh;
-        margin-top: 10px
-    }
 
-    .blanco {
-        display: none;
-    }
-   
 }
 @media (min-width: 768px){
     /* Laptop */
@@ -222,12 +112,4 @@ p{
     .fotos {
         flex-direction: row; 
      }
-     .negro {
-        display: flex;
-    }
-    .blanco {
-        display: none;
-    }
- 
-
 }
