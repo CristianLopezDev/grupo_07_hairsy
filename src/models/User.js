@@ -11,11 +11,11 @@ const { stringify } = require('querystring');
 const fileName = "./src/data/user.json";
 const User = { 
     
-    getData : () => {
+    getData : function() {
         return JSON.parse(fs.readFileSync(fileName, 'utf-8'));  
     },
 
-    generateId : () => {
+    generateId : function() {
         let allUsers = this.findAll();
         let lastUser = allUsers.pop();
         if (lastUser) {
@@ -27,39 +27,39 @@ const User = {
     findAll : function() {
         return this.getData();
     },
-
-    findByPk : (id) => {
+//Busca por ID
+    findByPk : function (id) {
         let allUsers = this.findAll();
         let userFound = allUsers.find(oneUser => oneUser.id === id);
         return userFound;
     },
 
-    findByField : (field, text) => {
+    findByField : function (field, text) {
         let allUsers = this.findAll();
-        let userFound = allUsers.find(oneUser => oneUser.field === text);
+        let userFound = allUsers.find(oneUser => oneUser[field] === text);
         return userFound;
     },
     
-    create: (userData) => {
+    create: function(userData) {
         let allUsers = this.findAll();
         newUser = {
             id : this.generateId(),
             ...userData
-        }
+        } 
         allUsers.push(newUser);
-        fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));
-        return true;
+        fs.writeFileSync(fileName, JSON.stringify(allUsers, null, ' '));
+        return newUser;
 
     },
 
     delete : function(id) {
         let allUsers = this.findAll();
         let finalUsers = allUsers.filter (oneUser => oneUser.id !== id);
-        fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, ' '));
+        fs.writeFileSync(fileName, JSON.stringify(finalUsers, null, ' '));
         return true;
     }
 };
 
-console.log (User.findAll());
+//console.log (User.delete(11));
 
 module.exports = User;

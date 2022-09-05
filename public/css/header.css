@@ -34,14 +34,14 @@ a {
     color: white;
 }
 
-.nav li a {
+/* .nav li a {
     color: black;
     text-decoration:none;
     padding:5px;
     display:block;
 
 }
-
+ */
 .nav li ul {
     display:none;
     position:absolute;

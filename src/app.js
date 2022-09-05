@@ -7,7 +7,8 @@ const userRouter = require('./routes/userRouter');
 const methodOverride = require('method-override');
 const { rmSync } = require("fs");
 const session = require('express-session');
-
+const cookieParser = require('cookie-parser');
+const validateRegister = require("./middlewares/validateRegister");
 
 
 app.use(methodOverride('_method'));
@@ -33,8 +34,10 @@ app.use(session( {
     
 }));
 
+
+
 //Capturo información de formulario en forma de obj literal
-app.use(express.urlencoded({ extended: false}));
+app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
 app.use((req, res, next) => {

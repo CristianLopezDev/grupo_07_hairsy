@@ -16,6 +16,13 @@ body{
     position: absolute;
 }
 
+.nav li a {
+    color: black;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+}
+
 .logos {
 
     align-items: center;

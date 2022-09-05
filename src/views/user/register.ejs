@@ -9,35 +9,35 @@
 <body>
 
     <%- include('../partials/header') %> 
-   
+
     <main class="main">
 
         <div class="login-box">
             <div class="formulario">
-                <form action="user/register" method="POST" enctype="multipart/form-data"><h4>Registrate</h4>
+                <form action="/register" method="POST" enctype="multipart/form-data"><h4>Registrate</h4>
                     <div class="nombre">
 
-                        <input type="text" placeholder="Nombre y apellido" name="■ Nombre y apellido:"> </input>
+                        <input type="text" placeholder="Nombre y apellido" name="fullName"> </input>
                     </div>
 
                     <div class="usuario">
-                        <input type="text" placeholder="Nombre de usuario" name="usuario"> </input>
+                        <input type="text" placeholder="Nombre de usuario" name="userName"> </input>
                     </div>
                     <div class="avatar">
                         <label for="image" class="form-label"><h4>Imagen de perfil:</h4></label>
-                        <input type="file" name="image" id="image" class="form-input">
+                        <input type="file" name="avatar" id="image" class="form-input">
                     </div>
                     <div class="calendario">
                         <h4> Fecha de nacimiento:</h4>
-                        <input type="date" name="fecha de nacimiento"> </input>
+                        <input type="date" name="birthDate"> </input>
                     </div>
 
                     <div class="mail">
 
-                        <input type="mail" placeholder="E-mail"> </input>
+                        <input type="mail" placeholder="E-mail" name="email"> </input>
                     </div>
                     <div class="password">
-                        <input type="password" placeholder="Contraseña"> </input>
+                        <input type="password" placeholder="Contraseña" name="password"> </input>
                     </div>
 
                     <div class="confirm">
@@ -49,7 +49,7 @@
                         <button class="borrar" type="reset">Borrar</button>
                     </div>
                     </form>
-   
+
     </main> 
     
     <%- include('../partials/footer') %> 

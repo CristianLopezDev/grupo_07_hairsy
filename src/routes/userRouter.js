@@ -3,6 +3,7 @@ const router = express.Router();
 const multer = require('multer');
 
 const userController = require('../controllers/userController');
+const validateRegister = require('../middlewares/validateRegister');
 
 const storage = multer.diskStorage( {
     destination: function (req, file, cb) {
@@ -14,7 +15,9 @@ const storage = multer.diskStorage( {
 });     
 const upload = multer({ storage });
 
-const validations = require('../middlewares/validateRegister')
+const validations = require('../middlewares/validateRegister');
+const { route } = require('./mainRouter');
+//const body = req.body;
 
 
 
@@ -22,7 +25,7 @@ router.get('/login', userController.login);
 router.post('/login', userController.loginProcess);
 
 router.get('/register', userController.register);           
-
+/* router.post('/register', validateRegister, userController.processRegister); */
 //router.post('/register', upload.single('image'), validations, userController.store);
 
 router.get('/cart', userController.cart);

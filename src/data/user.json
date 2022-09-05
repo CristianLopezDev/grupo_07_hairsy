@@ -1,82 +1,92 @@
 [
  {
   "id": 1,
-  "firstname": "Decca",
-  "username": "dannesley0",
-  "email": "dlinthead0@irs.gov",
-  "password": "v3i8LWxG6",
-  "birthday": "28/07/1965"
+  "fullname": "Cristian Lopez",
+  "username": "Chiru",
+  "avatar": "chiru.png",
+  "email": "chirumusic91@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  },
  {
   "id": 2,
-  "firstname": "Allard",
-  "username": "astedson1",
-  "email": "acannon1@hostgator.com",
-  "password": "LXtVYxsM68",
-  "birthday": "05/08/1981"
+  "fullname": "Nicolas Mansilla",
+  "username": "Nmansilla",
+  "avatar": "chiru.png",
+  "email": "zxcv@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  },
  {
   "id": 3,
-  "firstname": "Glendon",
-  "username": "gbeardow2",
-  "email": "gfriday2@ucoz.ru",
-  "password": "pS6tZxXY",
-  "birthday": "26/03/1987"
+  "fullname": "Nadia Schraier",
+  "username": "NSchraier",
+  "avatar": "chiru.png",
+  "email": "asca@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  },
  {
   "id": 4,
-  "firstname": "Christina",
-  "username": "cnormington3",
-  "email": "cpenwarden3@blinklist.com",
-  "password": "gKVNcoV2",
-  "birthday": "14/03/1989"
+  "fullname": "Martin Hinojal",
+  "username": "MHinojal",
+  "avatar": "chiru.png",
+  "email": "qwerty@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  },
  {
   "id": 5,
-  "firstname": "Penny",
-  "username": "pdibiasio4",
-  "email": "ppendrey4@blog.com",
-  "password": "s2G6Ur",
-  "birthday": "23/10/1925"
+  "fullname": "Tomas Olarte",
+  "username": "TOlarte",
+  "avatar": "chiru.png",
+  "email": "123456@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  },
  {
   "id": 6,
-  "firstname": "Skippy",
-  "username": "scragg5",
-  "email": "stwidle5@goo.ne.jp",
-  "password": "8dYv6aDc",
-  "birthday": "22/04/1942"
+  "fullname": "Andrey ",
+  "username": "Andrey",
+  "avatar": "chiru.png",
+  "email": "987654@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  },
  {
   "id": 7,
-  "firstname": "Bobbie",
-  "username": "bgauvin6",
-  "email": "bwilleson6@zdnet.com",
-  "password": "XyDabxaJg2L",
-  "birthday": "06/09/1931"
+  "fullname": "Lucas Galleti",
+  "username": "LGalleti",
+  "avatar": "chiru.png",
+  "email": "poiuy@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  },
  {
   "id": 8,
-  "firstname": "Maximilian",
-  "username": "mbehninck7",
-  "email": "mmcduffie7@fda.gov",
-  "password": "fqKHXjM8",
-  "birthday": "23/06/1968"
+  "fullname": "Pablo Morrone",
+  "username": "PMorrone",
+  "avatar": "chiru.png",
+  "email": "lkjhg@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  },
  {
   "id": 9,
-  "firstname": "Mar",
-  "username": "mlamke8",
-  "email": "mtasseler8@oakley.com",
-  "password": "iVG6Li6zEtAT",
-  "birthday": "17/10/1953"
+  "fullname": "Cristian Nicolas Lopez",
+  "username": "Cristian91",
+  "avatar": "chiru.png",
+  "email": "c.lopez91@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  },
  {
   "id": 10,
-  "firstname": "Nanon",
-  "username": "nholtum9",
-  "email": "ndavidesco9@sakura.ne.jp",
-  "password": "3mHJmO",
-  "birthday": "15/11/1995"
+  "fullname": "Matias Lute",
+  "username": "MLute",
+  "avatar": "chiru.png",
+  "email": "matias92@gmail.com",
+  "password": "Hairsy07",
+  "birthday": "08/11/1991"
  }
 ]

@@ -56,17 +56,21 @@ const userController = {
 
     processRegister: (req, res) => {
         const resultValidation = validationResult(req);
+
         if (resultValidation.errors.lenght > 0) {
-            return res.render("user/register", {
+        
+            return res.render("register", {
+        
                 errors : resultValidation.mapped(),
                 oldData : req.body
             });
+
         }
 
         let userInDB = User.findByField('email', req.body.email);
 
         if (userInDB) {
-            return res.render("user/register", {
+            return res.render("register", {
                 errors : {
                     email : {
                         msg : 'Este email ya esta registrado'

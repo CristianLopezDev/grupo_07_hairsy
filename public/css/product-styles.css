@@ -11,6 +11,13 @@ body{
     font-family: roboto;
 }
 
+.nav li a {
+    color: black;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+}
+
 .logos {
     display: flex;
     padding: 20px;
