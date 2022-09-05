@@ -6,13 +6,13 @@
 
 // CRUD
 
-/*const fs = require('fs');
+const fs = require('fs');
 const { stringify } = require('querystring');
-const User = {
-    fileName : './data/user.json',
+const fileName = "./src/data/user.json";
+const User = { 
     
     getData : () => {
-        return JSON.parse(fs.readFileSync(this.fileName, 'utf-8'));  
+        return JSON.parse(fs.readFileSync(fileName, 'utf-8'));  
     },
 
     generateId : () => {
@@ -22,10 +22,9 @@ const User = {
             return lastUser.id + 1; 
         }
         return 1;
-         
     },
 
-    findAll : () => {
+    findAll : function() {
         return this.getData();
     },
 
@@ -53,7 +52,7 @@ const User = {
 
     },
 
-    delete : (id) => {
+    delete : function(id) {
         let allUsers = this.findAll();
         let finalUsers = allUsers.filter (oneUser => oneUser.id !== id);
         fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, ' '));
@@ -61,6 +60,6 @@ const User = {
     }
 };
 
-console.log (User.findByPk(2));
+console.log (User.findAll());
 
-module.exports = User;*/
+module.exports = User;

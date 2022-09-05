@@ -39,6 +39,7 @@ a {
     text-decoration:none;
     padding:5px;
     display:block;
+
 }
 
 .nav li ul {
@@ -74,5 +75,5 @@ a {
 }
 
 @media (min-width: 768px){
-
+    
 }

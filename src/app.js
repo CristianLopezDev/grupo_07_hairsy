@@ -26,7 +26,12 @@ app.use('/product', productRouter);
 
 app.use('/user', userRouter);
 
-app.use(session( {secret: "Nuestro mensaje secreto"}));
+app.use(session( {
+    secret: "Nuestro mensaje secreto",
+    resave: false,
+    saveUninitialized: false,
+    
+}));
 
 //Capturo información de formulario en forma de obj literal
 app.use(express.urlencoded({ extended: false}));

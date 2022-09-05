@@ -29,7 +29,7 @@ body{
 }
 
 body{
-    background-color: ;
+    background-color:white ;
 }
 
 main{
@@ -122,6 +122,9 @@ h3{
     .fotos {
         flex-direction: column; 
     }
+    .blanco {
+        display: none;
+    }
 }
 
 
@@ -130,6 +133,9 @@ h3{
     .fotos {
         flex-direction: column; 
      }
+     .blanco {
+        display: none;
+    }
 }
 @media (min-width: 768px){
     /* Laptop */
@@ -165,6 +171,9 @@ h3{
         
         height: 36px;
       
+    }
+    .blanco {
+        display: none;
     }
 
 }

@@ -17,14 +17,17 @@ const userController = {
 
     loginProcess : (req, res) => {
         
-        let userToLogIn = User.findByField('email', req.body.email);
+      // let userToLogIn = User.findByField('email', req.body.email);
         
-        if(userToLogIn){
+/*         if(userToLogIn){
             let correctPassword = bcryptjs.compareSync (req.body.password, userToLogIn.password)
             
             if  (correctPassword === req.password){
-                return res.send('Puedes ingresar');
+                delete userToLogIn.password;
+                req.session.userLogged = userToLogIn;
+                return res.redirect('user/profile');
           }
+          
           return res.render('user/login', {
             errors : {
                 email : {
@@ -32,7 +35,8 @@ const userController = {
                 }
             }
         });
-
+ 
+        return console.log("Holas")
         };
 
         return res.render('user/login', {
@@ -41,7 +45,8 @@ const userController = {
                     msg : 'No se encuentra este email en nuestra base de datos'
                 }
             }
-        });
+        }); */
+        return console.log("hola");
 
     },
 
@@ -94,6 +99,17 @@ const userController = {
             fs.writeFileSync(usersFilePath, JSON.stringify(userClone, null, ' '));
             res.redirect ('/');
         },
+    
+    profile: (req, res) => {
+        return res.render('user/profile', {
+            user: req.session.userLogged
+        })
+    }  ,
+    
+    logout: (req, res) => {
+        res.session.destroy();
+        return res.redirect('/');
+    }
     }
 
 module.exports = userController;

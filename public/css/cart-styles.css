@@ -116,9 +116,9 @@ h3{
     margin-top: 150px;
 }
 
-.imagen {
+/*.imagen {
     
-}
+}*/
 
 .cantidad {
     margin-left: 100px;
@@ -136,9 +136,9 @@ h3{
 
 }
 
-.pago {
+/*.pago {
 
-}
+}*/
 
 .acumulador {
     height: 20px;
@@ -189,6 +189,9 @@ h3{
       
         justify-content: center;
     }
+    .blanco {
+        display: none;
+    }
 }
 
 
@@ -208,14 +211,17 @@ h3{
 
     }
      
-    .Imagen {
+   /*.Imagen {
 
         
-    }
+    }*/
     .contenedor1 {
 
       
         justify-content: center;
+    }
+    .blanco {
+        display: none;
     }
 }
 
@@ -224,6 +230,9 @@ h3{
     .create {
        
         flex-wrap: nowrap;
+    }
+    .blanco {
+        display: none;
     }
 
 }

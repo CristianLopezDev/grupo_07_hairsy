@@ -93,6 +93,9 @@ h2 {
     .fotos {
         flex-direction: column; 
      }
+     .blanco {
+        display: none;
+    }
 }
 
 
@@ -101,6 +104,9 @@ h2 {
     .fotos {
         flex-direction: column; 
      }
+     .blanco {
+        display: none;
+    }
 
 }
 @media (min-width: 768px){
@@ -112,4 +118,7 @@ h2 {
     .fotos {
         flex-direction: row; 
      }
+     .blanco {
+        display: none;
+    }
 }
