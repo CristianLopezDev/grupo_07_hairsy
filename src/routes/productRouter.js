@@ -12,14 +12,10 @@ const storage = multer.diskStorage( {
     }
 });
 
-//Variable para Multer
 const upload = multer({ storage });
 
 //#######Controller required#######//
 const productController = require('../controllers/productController');
-
-// /*** GET ALL PRODUCTS ***/ 
-// router.get('/', productController.product); 
 
 // /*** CREATE ONE PRODUCT ***/
 router.get('/create', productController.create);

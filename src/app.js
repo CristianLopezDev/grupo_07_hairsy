@@ -34,9 +34,6 @@ app.use(session( {
     
 }));
 
-
-
-//Capturo información de formulario en forma de obj literal
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 

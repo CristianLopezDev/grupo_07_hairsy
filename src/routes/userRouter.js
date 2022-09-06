@@ -25,7 +25,7 @@ router.get('/login', userController.login);
 router.post('/login', userController.loginProcess);
 
 router.get('/register', userController.register);           
-/* router.post('/register', validateRegister, userController.processRegister); */
+router.post('/register', userController.processRegister);
 //router.post('/register', upload.single('image'), validations, userController.store);
 
 router.get('/cart', userController.cart);
