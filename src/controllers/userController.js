@@ -17,26 +17,26 @@ const userController = {
 
     loginProcess : (req, res) => {
         
-      // let userToLogIn = User.findByField('email', req.body.email);
+        let userToLogIn = User.findByField('email', req.body.email);
         
-/*         if(userToLogIn){
+        if(userToLogIn){
             let correctPassword = bcryptjs.compareSync (req.body.password, userToLogIn.password)
             
             if  (correctPassword === req.password){
                 delete userToLogIn.password;
                 req.session.userLogged = userToLogIn;
                 return res.redirect('user/profile');
-          }
-          
-          return res.render('user/login', {
+        }
+        
+        return res.render('user/login', {
             errors : {
                 email : {
                     msg : 'Las credenciales son invalidas'
                 }
             }
         });
- 
-        return console.log("Holas")
+
+        //return console.log("Holas")
         };
 
         return res.render('user/login', {
@@ -45,7 +45,7 @@ const userController = {
                     msg : 'No se encuentra este email en nuestra base de datos'
                 }
             }
-        }); */
+        });
         return console.log("hola");
 
     },

@@ -1,42 +1,53 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
 
+/********CONTROLLER****************************/
 const userController = require('../controllers/userController');
+
+/**********MIDDLEWARES**************************/
+const upload = require('../middlewares/multerMiddleware');
 const validateRegister = require('../middlewares/validateRegister');
+const validatePassword = require('../middlewares/validatePassword');
+const validateUserEdit = require('../middlewares/validateUserEdit');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
+/*********************************************/
 
-const storage = multer.diskStorage( {
-    destination: function (req, file, cb) {
-        cb(null, '../../public/images/users')
-    },
-    filename: function (req, file, cb) {
-        cb(null, file.fieldName + '-' + Date.now());
-    }
-});     
-const upload = multer({ storage });
+// REGISTER FORM
+router.get('/register', userController.register);           
 
-const validations = require('../middlewares/validateRegister');
-const { route } = require('./mainRouter');
-//const body = req.body;
+// REGISTER POST (CARGA INFO)
+router.post('/register', upload.single('avatar'), validateRegister, userController.processRegister);
 
 
 
-router.get('/login', userController.login);
+// LOGIN FORM
+router.get('/login', guestMiddleware, userController.login);
+// LOGIN POST (CARGA INFO)
 router.post('/login', userController.loginProcess);
 
-router.get('/register', userController.register);           
-router.post('/register', userController.processRegister);
-//router.post('/register', upload.single('image'), validations, userController.store);
+// USER EDIT
 
+// DELETE (BUSCAR EN VIDEO METODO DELETE EN USER CONTROLLER)
+
+//router.delete('/delete/:id', authMiddleware, usersController.delete);
+
+// CART
 router.get('/cart', userController.cart);
 
-//router.get('/profile', authMiddleware, userController.profile);*/
+// PROFILE
+router.get('/profile', authMiddleware, userController.profile);
 
-//route.get('/logout/', userController.logout)*/
+//router.get('/profileUsers/:id/', authMiddleware, usersController.profileUsers);
 
-//const guestMiddleware = require('../middlewares/guestMiddleware');
-
-//const authMiddleware = require('../middlewares/authMiddleware');
+// LOGOUT
+router.get('/logout', userController.logout);
 
 
 module.exports = router;
+
+
+
+
+
+/* const { route } = require('./mainRouter'); */

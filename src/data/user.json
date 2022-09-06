@@ -88,5 +88,10 @@
   "email": "matias92@gmail.com",
   "password": "Hairsy07",
   "birthday": "08/11/1991"
+ },
+ {
+  "id": 11,
+  "fullname": "Joaquin Perez",
+  "email": "joaquo@hotmail.com"
  }
 ]
