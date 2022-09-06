@@ -30,18 +30,18 @@ const controller = {
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		const product = products.find(element => element.id == req.params.id);
-		const productsClone = products;
-		const newProduct = {
+		let newProduct = {
+			id: products[products.length - 1].id + 1,
 			name: req.body.name,
-			description: req.body.description,
 			price: req.body.price,
+			discount: req.body.discount,
 			category: req.body.category,
-			image: req.file?.filename,
-		};
-		productsClone.push(newProduct);
-		fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, ' '));
-		res.render ('./product/detail', {product});
+			description: req.body.description,
+			image: req.file.filename
+		}
+		products.push(newProduct);
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, "  "));
+		res.redirect("/")
 	},
 
 	// Update - Form to edit
