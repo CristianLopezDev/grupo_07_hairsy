@@ -30,6 +30,7 @@ const controller = {
 	
 	// Create -  Method to store
 	store: (req, res) => {
+		const product = products.find(element => element.id == req.params.id);
 		const productsClone = products;
 		const newProduct = {
 			name: req.body.name,
@@ -40,7 +41,7 @@ const controller = {
 		};
 		productsClone.push(newProduct);
 		fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, ' '));
-		res.redirect ('/product');
+		res.render ('./product/detail', {product});
 	},
 
 	// Update - Form to edit

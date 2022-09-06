@@ -12,7 +12,7 @@
 
 body{
     font-family: roboto;
-    background: url(/public/images/products/fondoLogin.jpeg);
+    background: url(/public/images/fondoLogin.jpeg);
 }
 
 main {
@@ -30,7 +30,6 @@ main {
 }
 
 .login-box {
-/*background: #FFCB00;*/
 
     margin-top: 200px;
     border: 3px solid #FFCB00;

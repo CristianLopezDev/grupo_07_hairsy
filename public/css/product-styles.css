@@ -83,8 +83,12 @@ main{
 .cart_button{
     background-color: #FFCB00;
     height: 20px;
-    border: 0px;
+    border: 2px solid black;
+    border-radius: 4%;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
 }
 
 h4 {
@@ -162,16 +166,12 @@ h3{
     }     
 
     .principales {
-
         display: flex;
-        
-
     }
 
     .relacionados{
         display: flex;
-        max-width: 25%;
-        
+        max-width: 25%;      
     }    
     
     .cart_button{
