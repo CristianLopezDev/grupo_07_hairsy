@@ -13,6 +13,7 @@
 body{
     font-family: roboto;
     background: url(/public/images/fondoLogin.jpeg);
+    background-position: top ;
 }
 
 main {
@@ -23,7 +24,7 @@ main {
 }
 
 .nav li a {
-    color: black;
+    color: white;
     text-decoration:none;
     padding:5px;
     display:block;
@@ -97,8 +98,8 @@ h2 {
     /* Tablets */
     .fotos {
         flex-direction: column; 
-     }
-     .blanco {
+    }
+    .blanco {
         display: none;
     }
 }
@@ -108,24 +109,27 @@ h2 {
     /* Tablets */
     .fotos {
         flex-direction: column; 
-     }
-     .blanco {
+    }
+    .blanco {
         display: none;
     }
 }
 @media (min-width: 768px){
     /* Laptop */
-   
+
     video {
         display: block;
     }
     .fotos {
         flex-direction: row; 
-     }
+    }
     
     .blanco {
+        display: block;
+    }
+    .negro {
         display: none;
     }
- 
+
 
 }

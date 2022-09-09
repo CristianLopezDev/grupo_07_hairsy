@@ -2,9 +2,9 @@ const path = require('path');
 const { body } = require('express-validator')
 
 module.exports = [
-    body('fullName')
+    body('fullname')
         .notEmpty() .withMessage('Completa con tu nombre'),
-    body('userName')
+    body('username')
         .notEmpty() .withMessage('Completa con tu nombre de usuario'),    
     
     body('avatar')
@@ -21,7 +21,8 @@ module.exports = [
             }
             return true;
         }),    
-
+        //body('birthday')
+          //  .c,
         body('email')
         .notEmpty() .withMessage('Completa con tu Email') .bail()
         .isEmail() .withMessage('Debes usar un formato de email valido, EJ: usuario@hotmail.com'),

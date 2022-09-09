@@ -25,7 +25,7 @@ body{
     align-items: center;
     text-align: center;
     
-   
+
 }
 .banner{
     background-color: #FFCB00;
@@ -46,7 +46,7 @@ main{
 .main_product{
     display: flex;
     flex-direction: column;
-   
+
 }
 
 .main_product1{
@@ -143,26 +143,26 @@ h3{
     /* Tablets */
     .fotos {
         flex-direction: column; 
-     }
-     .blanco {
+    }
+    .blanco {
         display: none;
     }
 }
 @media (min-width: 768px){
     /* Laptop */
-   
+
     video {
         display: block;
     }
     .fotos {
         flex-direction: row; 
-     }
+}
     
-     .main_product{
+    .main_product{
         display: flex;
-       
+    
         flex-wrap: wrap;
-       
+
     }     
 
     .principales {
@@ -176,8 +176,8 @@ h3{
     
     .cart_button{
         
-        height: 36px;
-      
+        height: 50px;
+
     }
     .blanco {
         display: none;

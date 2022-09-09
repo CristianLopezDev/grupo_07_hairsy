@@ -1,11 +1,8 @@
 // MODELO USER
 
 const fs = require('fs');
-
+const fileName =  './src/data/user.json'
 const User = { 
-    
-    fileName: './src/data/user.json',
-
     getData : function() {
         return JSON.parse(fs.readFileSync(fileName, 'utf-8'));  
     },

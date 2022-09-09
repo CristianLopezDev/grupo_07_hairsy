@@ -9,7 +9,8 @@
 
 body{
     font-family: roboto;
-    background: url(/public/images/fondoRegister.jpg)
+    background: url(/public/images/fondoRegister.jpg);
+    background-size: cover;
 }
 
 .nav li a {
@@ -51,6 +52,7 @@ main {
     box-sizing: border-box;
     padding: 30px 30px;
     border-radius: 20px;
+    color: white;
 }
 
 h2 {

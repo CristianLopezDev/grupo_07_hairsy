@@ -22,7 +22,7 @@ router.post('/register', upload.single('avatar'), validateRegister, userControll
 
 
 // LOGIN FORM
-router.get('/login', guestMiddleware, userController.login);
+router.get('/login',/*  guestMiddleware, */ userController.login);
 // LOGIN POST (CARGA INFO)
 router.post('/login', userController.loginProcess);
 

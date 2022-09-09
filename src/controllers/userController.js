@@ -4,6 +4,8 @@ const path = require('path');
 const User = require('../models/User');
 const usersFilePath = path.join(__dirname, '../data/user.json');
 const user = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+const { validationResult } = require('express-validator');
+
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -17,7 +19,7 @@ const userController = {
 
     loginProcess : (req, res) => {
         
-        let userToLogIn = User.findByField('email', req.body.email);
+        let userToLogIn = User.findByField('username', req.body.username);
         
         if(userToLogIn){
             let correctPassword = bcryptjs.compareSync (req.body.password, userToLogIn.password)
@@ -30,23 +32,21 @@ const userController = {
         
         return res.render('user/login', {
             errors : {
-                email : {
+                username : {
                     msg : 'Las credenciales son invalidas'
                 }
             }
         });
-
-        //return console.log("Holas")
         };
 
         return res.render('user/login', {
             errors : {
-                email : {
+                username : {
                     msg : 'No se encuentra este email en nuestra base de datos'
                 }
             }
         });
-        return console.log("hola");
+    
 
     },
 
@@ -55,13 +55,13 @@ const userController = {
     },
 
     processRegister: (req, res) => {
-        const resultValidation = validationResult(req);
+        const errors = validationResult(req);
 
-        if (resultValidation.errors.lenght > 0) {
+        if (!errors.isEmpty()) {
         
-            return res.render("register", {
+            return res.render("user/register", {
         
-                errors : resultValidation.mapped(),
+                errors : errors.mapped(),
                 oldData : req.body
             });
 
@@ -80,28 +80,33 @@ const userController = {
             });
         };
 
-        //return res.send(userInDB);  
-
         let userToCreate = {
             ...req.body,
             password : bcryptjs.hashSync(req.body.password, 10),
+            repassword: bcryptjs.hashSync(req.body.repassword, 10),
             avatar : req.file.filename
         };
 
-       let userCreated = User.create(userToCreate);
-        return res.redirect('./views/user/login');
+    let userCreated = User.create(userToCreate);
+        return res.redirect('/user/login');
     },
 
     store: (req, res) => {
             const userClone = user;
             const newUser = {
-                name: req.body.firstname,
-                image: req.file.fileName
+                
+                ... req.body,
+                
+                avatar: req.file.fileName,
+                password : bcryptjs.hashSync(req.body.password, 10),
+                
+        
+
             };
             userClone.push(newUser);
 
             fs.writeFileSync(usersFilePath, JSON.stringify(userClone, null, ' '));
-            res.redirect ('/');
+            res.redirect ('/login');
         },
     
     profile: (req, res) => {
