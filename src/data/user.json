@@ -133,5 +133,15 @@
   "password": "$2a$10$nnv065EL3LCPLGyzbTWGMuaDTlK.q2R5pFZHe1WROLOILfMM/Rxjy",
   "repassword": "$2a$10$TjDVCDVDJdPJVTfg0odkX.f1YieMu0.JyBC03AcyPoj.1q1jveEUW",
   "avatar": "avatar-1662693220479"
+ },
+ {
+  "id": 15,
+  "fullname": "Marco Polo",
+  "username": "Polito18",
+  "birthday": "1964-01-25",
+  "email": "marcopolo@hotmail.com",
+  "password": "$2a$10$nfTC2mHpJyfaf/5AhxNNRewOznsrpCQPJQpd4dUVy7/3JZSc/Vzau",
+  "repassword": "$2a$10$bKqDfRRic9F1sTE1f6tCV.qMUNpt547GBtlEULF8V0v/0Z6CXBYyK",
+  "avatar": "avatar-1662693480698"
  }
 ]
