@@ -49,7 +49,7 @@ const controller = {
         const editProduct = products.find((prod) => {
 			return prod.id == req.params.id;
 		})
-        res.render('edit', {editProduct});
+        res.render('./product/edit', {editProduct});
     },
 	// Update - Method to update
 	update: (req, res) => {

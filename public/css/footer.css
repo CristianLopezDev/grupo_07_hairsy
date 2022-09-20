@@ -34,6 +34,7 @@ p{
 .marcaRegistrada {
     display: flex;
     flex-direction: row;
+    
 }
 
 .social{

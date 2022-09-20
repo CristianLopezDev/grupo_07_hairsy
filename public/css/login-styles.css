@@ -14,6 +14,8 @@ body{
     font-family: roboto;
     background: url(/public/images/fondoLogin.jpeg);
     background-position: top ;
+    background-position-x:  30px ;
+    background-position-y:  55px;
 }
 
 main {
@@ -91,6 +93,14 @@ h2 {
 
 }
 
+.contra {
+    font-weight: bold;
+}
+
+.register {
+    font-weight: bold;
+}
+
 
 
 
@@ -100,6 +110,9 @@ h2 {
         flex-direction: column; 
     }
     .blanco {
+        display: block;
+    }
+    .negro {
         display: none;
     }
 }
@@ -111,6 +124,9 @@ h2 {
         flex-direction: column; 
     }
     .blanco {
+        display: block;
+    }
+    .negro {
         display: none;
     }
 }
