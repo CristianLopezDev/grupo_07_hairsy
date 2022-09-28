@@ -16,7 +16,10 @@
 
 }
 
-
+.ofertas {
+    position: absolute;
+    top: 450px;
+}
 
 @media (max-width: 460px){
     .logo {
