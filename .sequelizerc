@@ -1,4 +1,4 @@
-/* const { resolve } = require('path');
+ const { resolve } = require('path');
 const path = require ('path');
 
 module.exports = {
@@ -7,4 +7,4 @@ module.exports = {
     'seeders-path': path.resolve('./src/database/seeders'),
     'migrations-path': path.resolve('./src/database/migrations'),
     
-} */
+}

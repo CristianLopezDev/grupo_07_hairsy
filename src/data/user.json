@@ -143,5 +143,15 @@
   "password": "$2a$10$nfTC2mHpJyfaf/5AhxNNRewOznsrpCQPJQpd4dUVy7/3JZSc/Vzau",
   "repassword": "$2a$10$bKqDfRRic9F1sTE1f6tCV.qMUNpt547GBtlEULF8V0v/0Z6CXBYyK",
   "avatar": "avatar-1662693480698"
+ },
+ {
+  "id": 16,
+  "fullname": "Jennifer Iralour",
+  "username": "Jenny",
+  "birthday": "1992-03-03",
+  "email": "jennifer@gmail.com",
+  "password": "$2a$10$qXk4ciFd4x219O/q.gcb1.T4bw1zLgs32Pe/Q7AvPWv9xqzJTFXp.",
+  "repassword": "$2a$10$JUJKEk1K3wlrSJdR14oep.IomnjzDMRNiW7s2DTAOBhiic6KWNIyG",
+  "avatar": "avatar-1664931053092"
  }
 ]

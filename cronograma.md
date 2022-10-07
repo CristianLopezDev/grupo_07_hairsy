@@ -48,12 +48,12 @@ Sprint 6:
             Tipos de datos de los campos y sus restricciones. ★
             Relaciones entre las diferentes tablas. 1/5 (falta una relacion por cada tabla de categoria)
     6 - (Opcional) Script de datos de base de datos para:
-            Tabla de usuarios.
-            Tabla de productos.
+            Tabla de usuarios.★
+            Tabla de productos.★
             Tablas secundarias (categorías, marcas, colores, talles, etc).
             (Opcional) Tabla de carrito de compras y productos de carritos de compras.
     7 - Creación de carpeta Sequelize con: ★
-            Archivos de configuración.
+            Archivos de configuración.★
             Modelos con sus relaciones.
     8 - CRUD
             De productos.

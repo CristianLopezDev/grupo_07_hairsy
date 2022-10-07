@@ -8,10 +8,6 @@ const app = express();
 const mainRouter = require("./routes/mainRouter")
 const productRouter = require('./routes/productRouter');
 const userRouter = require('./routes/userRouter');
-/***************ROUTING*******************/
-app.use('/',mainRouter)
-app.use('/product', productRouter);
-app.use('/user', userRouter);
 /*****************SESSION************************/
 app.use(session( {
     secret: "Nuestro mensaje secreto",
@@ -35,6 +31,10 @@ app.use("/public", express.static("public"));
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
+/***************ROUTING*******************/
+app.use('/',mainRouter)
+app.use('/product', productRouter);
+app.use('/user', userRouter);
 
 /****************404**********************/
 app.use((req, res, next) => {
