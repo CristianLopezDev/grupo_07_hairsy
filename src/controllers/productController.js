@@ -9,6 +9,30 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 	//all products
 const controller = {
+	all: async (req, res) => {
+        res.render('products/product', {
+            products: await db.Product.findAll({
+                where: {
+                    estado: 'A'
+                }
+            })
+            .then(product => {
+                data = JSON.parse(JSON.stringify(product));
+                return data;
+            }),
+            categories: await db.Category.findAll({
+                where: {
+                //falta completar
+				
+                }
+            })
+            .then(category => {
+                data = JSON.parse(JSON.stringify(category));
+                return data;
+            }),
+            nombrePagina: 'Productos'
+        })
+    },
     product: (req, res) => {
 		const filteredProducts = products.filter(product => product.category === req.params.category);
 		
