@@ -14,14 +14,14 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     const config = {
-        tableName: 'category',
+        tableName: 'categories',
         timestamps: false
     };
     const Category = sequelize.define(alias, cols, config);
     
     Category.associate = (models) => {
         Category.belongsTo(models.Product, {
-            as: 'categories',
+            as: 'category',
             foreignKey: 'category_id'
         })
     }

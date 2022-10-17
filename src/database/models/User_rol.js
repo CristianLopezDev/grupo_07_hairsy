@@ -8,9 +8,9 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        userId:{ type: dataTypes.INTEGER },
+        userId: { type: dataTypes.INTEGER },
         rolId: { type: dataTypes.INTEGER }
-        
+
     };
 
     const config = {
@@ -18,17 +18,17 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     };
     const User_rol = sequelize.define(alias, cols, config);
-   User_rol.associate =  (models) => {
-        User_rol.belongsTo (models.rol, models.user, {
+    User_rol.associate = (models) => {
+        User_rol.belongsTo(models.rol, models.user, {
             as: 'User_rol',
-            foreignKey: 'userId' 
+            foreignKey: 'userId'
 
         })
 
-   } 
+    }
 
     return User_rol;
 
-    
+
 
 };
