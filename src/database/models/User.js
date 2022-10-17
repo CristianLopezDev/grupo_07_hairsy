@@ -1,6 +1,6 @@
 
 module.exports = (sequelize, dataTypes) => {
-    const alias = 'Users';
+    const alias = 'User';
 
     const cols = {
         id: {
@@ -23,6 +23,16 @@ module.exports = (sequelize, dataTypes) => {
         tableName: 'users',
         timestamps: false
     };
-    const Users = sequelize.define(alias, cols, config);
-    return Users;
+    const User = sequelize.define(alias, cols, config);
+    
+    User.associate = (models) => {
+        User.belongsTo(models.User_rol, {
+            as: 'users',
+            foreignKey: 'userId'
+        })
+    };
+    
+    
+    return User;
+
 };

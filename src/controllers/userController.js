@@ -17,36 +17,38 @@ const userController = {
         res.render("user/login");
     },
 
-    loginProcess : (req, res) => {
-        
+    loginProcess: (req, res) => {
+
         let userToLogIn = User.findByField('username', req.body.username);
-        
-        if(userToLogIn){
-            let correctPassword = bcryptjs.compareSync (req.body.password, userToLogIn.password)
-            
-            if  (correctPassword === req.password){
+
+        if (userToLogIn) {
+            let correctPassword = bcryptjs.compareSync(req.body.password, userToLogIn.password)
+
+            if (correctPassword === req.password) {
                 delete userToLogIn.password;
                 req.session.userLogged = userToLogIn;
+            
                 return res.redirect('user/profile');
-        }
-        
-        return res.render('user/login', {
-            errors : {
-                username : {
-                    msg : 'Las credenciales son invalidas'
-                }
             }
-        });
-        };
+            res.send(`las credenciales son invalidas ${userToLogIn}`)
 
+            return res.render('user/login', {
+                errors: {
+                    username: {
+                        msg: 'Las credenciales son invalidas'
+                    }
+                }
+            });
+        };
+    res.send('No se encontro mail')
         return res.render('user/login', {
-            errors : {
-                username : {
-                    msg : 'No se encuentra este email en nuestra base de datos'
+            errors: {
+                username: {
+                    msg: 'No se encuentra este email en nuestra base de datos'
                 }
             }
         });
-    
+
 
     },
 
@@ -58,11 +60,11 @@ const userController = {
         const errors = validationResult(req);
 
         if (!errors.isEmpty()) {
-        
+
             return res.render("user/register", {
-        
-                errors : errors.mapped(),
-                oldData : req.body
+
+                errors: errors.mapped(),
+                oldData: req.body
             });
 
         }
@@ -71,54 +73,54 @@ const userController = {
 
         if (userInDB) {
             return res.render("register", {
-                errors : {
-                    email : {
-                        msg : 'Este email ya esta registrado'
+                errors: {
+                    email: {
+                        msg: 'Este email ya esta registrado'
                     }
                 },
-                oldData : req.body
+                oldData: req.body
             });
         };
 
         let userToCreate = {
             ...req.body,
-            password : bcryptjs.hashSync(req.body.password, 10),
+            password: bcryptjs.hashSync(req.body.password, 10),
             repassword: bcryptjs.hashSync(req.body.repassword, 10),
-            avatar : req.file.filename
+            avatar: req.file.filename
         };
 
-    let userCreated = User.create(userToCreate);
+        let userCreated = User.create(userToCreate);
         return res.redirect('/user/login');
     },
 
     store: (req, res) => {
-            const userClone = user;
-            const newUser = {
-                
-                ... req.body,
-                
-                avatar: req.file.fileName,
-                password : bcryptjs.hashSync(req.body.password, 10),
-                
-        
+        const userClone = user;
+        const newUser = {
 
-            };
-            userClone.push(newUser);
+            ...req.body,
 
-            fs.writeFileSync(usersFilePath, JSON.stringify(userClone, null, ' '));
-            res.redirect ('/login');
-        },
-    
+            avatar: req.file.fileName,
+            password: bcryptjs.hashSync(req.body.password, 10),
+
+
+
+        };
+        userClone.push(newUser);
+
+        fs.writeFileSync(usersFilePath, JSON.stringify(userClone, null, ' '));
+        res.redirect('/login');
+    },
+
     profile: (req, res) => {
         return res.render('user/profile', {
             user: req.session.userLogged
         })
-    }  ,
-    
+    },
+
     logout: (req, res) => {
         res.session.destroy();
         return res.redirect('/');
     }
-    }
+}
 
 module.exports = userController;
