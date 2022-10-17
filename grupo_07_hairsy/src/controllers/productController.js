@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { restart } = require('nodemon');
 const path = require('path');
+const db = require ("../database/models");
 
 const productsFilePath = path.join(__dirname, '../data/product.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -51,6 +52,11 @@ const controller = {
 	create: (req, res) => {
 		res.render ('product/create')
 	},
+	// {
+	// 	db.Products.create({
+
+	// 	})
+	// }
 	
 	// Create -  Method to store
 	store: (req, res) => {
