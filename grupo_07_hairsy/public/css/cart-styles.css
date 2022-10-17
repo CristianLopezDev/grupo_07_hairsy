@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px ;
+    padding: 0.01px;
+    text-decoration: none;
+    
+}
+
+body{
+    font-family: roboto;
+}
+.t1 {
+    font-family: 'Satisfy', cursive;
+    color:black;
+    position: absolute;
+}
+
+.nav li a {
+    color: black;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+}
+
+.logos {
+
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+main {
+    
+    margin-bottom: 20px;
+    padding: 20px 0 15px 0;
+   
+    opacity: 1;
+}
+
+footer {
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.grilla-footer{
+    display: flex;
+    font-family: roboto;
+    padding: 20px;
+   text-align: center;
+}
+
+.titulo_footer{
+    font-size: 15px;
+}
+p{
+    font-size: 12px;
+}
+
+.marcaRegistrada {
+    display: flex;
+    flex-direction: row;
+}
+
+.social{
+    color: black;
+}
+
+.product-detail{
+    max-width: 40%;
+    max-height: 70%;
+    position: relative;
+    border-radius: 20%;
+    padding: 20px;
+    margin: 100px;
+}
+.producto {
+    display:flex
+}
+
+.subtotal {
+    display:fixed
+}
+
+.descripcion{
+    display:flex;
+    flex-direction: column;
+    color: black;
+    margin-top: 120px;
+    margin-right: 20px
+}
+
+.agregar-carrito-button{
+    background-color: darksalmon;
+    height: 30px;
+    width: 200px;
+    border-radius: 8%;
+    font-weight: 100;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+.campos{
+    padding: 10px;
+    text-align: baseline;
+}
+
+.payment-icons{
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.boxEnvio {
+    display: flex;
+}
+
+.create {
+    display: flex;
+    margin-top: 150px;
+}
+
+/*.imagen {
+    
+}*/
+
+.cantidad {
+    margin-left: 100px;
+}
+
+.boxPago1 {
+    height: 20px;
+    width: 180px;
+
+}
+
+.boxPago {
+    height: 20px;
+    width: 120px;
+
+}
+
+/*.pago {
+
+}*/
+
+.acumulador {
+    height: 20px;
+    width: 30px;
+}
+
+.product-img {
+    height: 300px;
+    width: 300px;
+
+}
+
+.main-cart {
+    display: flex;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+   
+    margin-top: 150px;
+}
+
+
+@media (max-width: 460px){
+    /* Celu */
+
+     .logo {
+        height: 13vh;
+        width: 18vh;
+        margin-top: 10px;
+    }
+   
+    .create {
+        margin-left: 45px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+     
+    .Imagen {
+
+        margin-left: 45px;
+    }
+   
+    .contenedor1 {
+
+      
+        justify-content: center;
+    }
+    .blanco {
+        display: none;
+    }
+}
+
+
+@media (min-width: 460px){
+    /* Tablets */
+   
+     .logo {
+        height: 13vh;
+        width: 18vh;
+        margin-top: 10px;
+    }
+
+    .create {
+       
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+     
+   /*.Imagen {
+
+        
+    }*/
+    .contenedor1 {
+
+      
+        justify-content: center;
+    }
+    .blanco {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .create {
+       
+        flex-wrap: nowrap;
+    }
+    .blanco {
+        display: none;
+    }
+
+}
+
+
+
+

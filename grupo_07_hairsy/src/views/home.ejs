@@ -1,0 +1,53 @@
+<%- include('partials/head') %>
+
+    <link href="/css/home-styles.css" rel="stylesheet">
+    <link href = "/css/header.css" rel = "stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    
+
+    </head>
+
+    <body>
+
+        <%- include('partials/header') %>
+
+            <main>
+
+                
+                <div id="background">
+                    <video loop muted autoplay preload="auto">
+                        <source src="/public/images/abstract1.mp4">
+                    </video>
+                    
+                </div>
+                <!-- Colocar sobre el background mas arriba -->
+                
+                <div class="fotos">
+                    
+                    <div class="foto1">
+                        <a href="product/color"> <img src="/public/images/Color.png">
+                            
+                        </a>
+                    </div>
+                    <div class="foto2">
+                        <a href="product/care"> <img class="img" src="/public/images/Care.png">
+                        </a>
+                    </div>
+                    <div class="foto3">
+                        <a href="product/styling"> <img class="img" src="/public/images/Styling.png">
+                        </a>
+                    </div>
+                    <div class="foto4">
+                        <a href="product/barber"> <img class="img" src="/public/images/Barber.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ofertas"><img src="/public/images/ofertas.png"></div>
+
+            </main>
+
+            <%- include('partials/footer') %>
+
+    </body>
+
+    </html>
