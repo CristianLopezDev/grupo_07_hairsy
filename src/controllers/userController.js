@@ -24,13 +24,13 @@ const userController = {
         if (userToLogIn) {
             let correctPassword = bcryptjs.compareSync(req.body.password, userToLogIn.password)
 
-            if (correctPassword === req.password) {
+            if (correctPassword) {
                 delete userToLogIn.password;
                 req.session.userLogged = userToLogIn;
             
-                return res.redirect('user/profile');
+                return res.redirect('profile');
             }
-            res.send(`las credenciales son invalidas ${userToLogIn}`)
+            res.send(`las credenciales son invalidas ${userToLogIn.username}`)
 
             return res.render('user/login', {
                 errors: {
@@ -123,4 +123,14 @@ const userController = {
     }
 }
 
+
+
+
+
 module.exports = userController;
+
+
+
+
+
+bcryptjs.compareSync("12345678","$2a$10$qXk4ciFd4x219O/q.gcb1.T4bw1zLgs32Pe/Q7AvPWv9xqzJTFXp." )

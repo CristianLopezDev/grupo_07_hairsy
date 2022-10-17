@@ -153,5 +153,15 @@
   "password": "$2a$10$qXk4ciFd4x219O/q.gcb1.T4bw1zLgs32Pe/Q7AvPWv9xqzJTFXp.",
   "repassword": "$2a$10$JUJKEk1K3wlrSJdR14oep.IomnjzDMRNiW7s2DTAOBhiic6KWNIyG",
   "avatar": "avatar-1664931053092"
+ },
+ {
+  "id": 17,
+  "fullname": "Franco",
+  "username": "FAG",
+  "birthday": "1992-06-02",
+  "email": "fag@gmail.com",
+  "password": "$2a$10$WvtCoj1PMnOXFiguLM1kz.hyaDKpbgj4OFKS9QQORNhJwiOcZOBjO",
+  "repassword": "$2a$10$dsJVfs/Nt2gaKDmc9LM/NO0ohGC88o4cq..SXYrjXROsqSuZRTwvW",
+  "avatar": "avatar-1666014612883"
  }
 ]
