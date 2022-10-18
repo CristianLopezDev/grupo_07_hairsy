@@ -36,3 +36,5 @@ module.exports = (sequelize, dataTypes) => {
     return User;
 
 };
+
+// comentario de prueba //
