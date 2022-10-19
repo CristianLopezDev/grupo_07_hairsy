@@ -163,5 +163,15 @@
   "password": "$2a$10$WvtCoj1PMnOXFiguLM1kz.hyaDKpbgj4OFKS9QQORNhJwiOcZOBjO",
   "repassword": "$2a$10$dsJVfs/Nt2gaKDmc9LM/NO0ohGC88o4cq..SXYrjXROsqSuZRTwvW",
   "avatar": "avatar-1666014612883"
+ },
+ {
+  "id": 18,
+  "fullname": "Agustin Ciribe",
+  "username": "Agustin",
+  "birthday": "1992-10-10",
+  "email": "agus@hotmail.com",
+  "password": "$2a$10$64GfAfchYTLYDEmgFFKmoeeq1.2E4IMtUBS0H97ksrMAcEFSIfZAe",
+  "repassword": "$2a$10$bEtYU6lWbKfabWAgaIEA8eTwkTo.qORksXwwKgoQSgQ36Y4JWqqGO",
+  "avatar": "avatar-1666061953967"
  }
 ]
