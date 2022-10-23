@@ -13,7 +13,7 @@ const controller = {
         res.render('products/product', {
             products: await db.Product.findAll({
                 where: {
-                    estado: 'A'
+                
                 }
             })
             .then(product => {
