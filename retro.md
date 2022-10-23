@@ -121,4 +121,3 @@ Utilizando la metodología estrella de mar, en la retrospectiva salió lo siguie
 
 
 
-ascasc

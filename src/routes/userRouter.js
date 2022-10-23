@@ -1,24 +1,53 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
 
+/********CONTROLLER****************************/
 const userController = require('../controllers/userController');
 
-const storage = multer.diskStorage( {
-    destination: function (req, file, cb) {
-        cb(null, '../../public/images/users')
-    },
-    filename: function (req, file, cb) {
-        cb(null, file.fieldName + '-' + Date.now());
-    }
-});     
-const upload = multer({ storage });
+/**********MIDDLEWARES**************************/
+const upload = require('../middlewares/multerMiddleware');
+const validateRegister = require('../middlewares/validateRegister');
+const validatePassword = require('../middlewares/validatePassword');
+const validateUserEdit = require('../middlewares/validateUserEdit');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
+/*********************************************/
 
-router.get('/cart', userController.cart);
-router.get('/login', userController.login);
+// REGISTER FORM
+router.get('/register', userController.register);           
+
+// REGISTER POST (CARGA INFO)
+router.post('/register', upload.single('avatar'), validateRegister, userController.processRegister);
+
+
+
+// LOGIN FORM
+router.get('/login',/*  guestMiddleware, */ userController.login);
+// LOGIN POST (CARGA INFO)
 router.post('/login', userController.loginProcess);
 
-router.get('/register', userController.register);
-router.post('/register', upload.single('image'), userController.store);
+// USER EDIT
+
+// DELETE (BUSCAR EN VIDEO METODO DELETE EN USER CONTROLLER)
+
+//router.delete('/delete/:id', authMiddleware, usersController.delete);
+
+// CART
+router.get('/cart', userController.cart);
+
+// PROFILE
+router.get('/profile', authMiddleware, userController.profile);
+
+//router.get('/profileUsers/:id/', authMiddleware, usersController.profileUsers);
+
+// LOGOUT
+router.get('/logout', userController.logout);
+
 
 module.exports = router;
+
+
+
+
+
+/* const { route } = require('./mainRouter'); */

@@ -11,6 +11,13 @@ body{
     font-family: roboto;
 }
 
+.nav li a {
+    color: black;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+}
+
 .logos {
     display: flex;
     padding: 20px;
@@ -18,7 +25,7 @@ body{
     align-items: center;
     text-align: center;
     
-   
+
 }
 .banner{
     background-color: #FFCB00;
@@ -29,7 +36,7 @@ body{
 }
 
 body{
-    background-color: ;
+    background-color:white ;
 }
 
 main{
@@ -39,7 +46,7 @@ main{
 .main_product{
     display: flex;
     flex-direction: column;
-   
+
 }
 
 .main_product1{
@@ -76,8 +83,12 @@ main{
 .cart_button{
     background-color: #FFCB00;
     height: 20px;
-    border: 0px;
+    border: 2px solid black;
+    border-radius: 4%;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
 }
 
 h4 {
@@ -122,6 +133,9 @@ h3{
     .fotos {
         flex-direction: column; 
     }
+    .blanco {
+        display: none;
+    }
 }
 
 
@@ -129,42 +143,44 @@ h3{
     /* Tablets */
     .fotos {
         flex-direction: column; 
-     }
+    }
+    .blanco {
+        display: none;
+    }
 }
 @media (min-width: 768px){
     /* Laptop */
-   
+
     video {
         display: block;
     }
     .fotos {
         flex-direction: row; 
-     }
+}
     
-     .main_product{
+    .main_product{
         display: flex;
-       
+    
         flex-wrap: wrap;
-       
+
     }     
 
     .principales {
-
         display: flex;
-        
-
     }
 
     .relacionados{
         display: flex;
-        max-width: 25%;
-        
+        max-width: 25%;      
     }    
     
     .cart_button{
         
-        height: 36px;
-      
+        height: 50px;
+
+    }
+    .blanco {
+        display: none;
     }
 
 }

@@ -6,6 +6,42 @@
     text-decoration: none;
     
 }
+/********************HEADER*********************/
+
+.nav li a {
+    color: black;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+
+}
+
+.ofertas {
+    position: absolute;
+    top: 560px;
+}
+
+@media (max-width: 460px){
+    .logo {
+        height: 13vh;
+        width: 18vh;
+        margin-top: 17px;
+}
+}
+
+@media (min-width: 460px){
+    .logo {
+        height: 13vh;
+        width: 18vh;
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 768px){
+    .nav li a {
+        color: white; }
+}
+
 
 /********************video***********************/
 body{
@@ -63,9 +99,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:100px
-}
+    margin-top:100px;
+    top: 150px;
 
+}
+.blanco {
+    display: none;
+}
 
 
 /***************************************************************************************/
@@ -81,29 +121,29 @@ main {
     /* Mobile */
     .fotos {
         flex-direction: column; 
-     }
-   .ofertas {
+}
+.ofertas {
         display: none;
         top: 200px;
-   }
+}
 }
 
 @media (min-width: 460px){
     /* Tablets */
     .fotos {
         flex-direction: column;
-      
+    
         
-     }
-     .ofertas {
+}
+.ofertas {
         display: none;
-   
+
     }
 }
 
 @media (min-width: 768px){
     /* Laptop */
-   
+
     #background{
         height: 100vh;
     }
@@ -113,11 +153,20 @@ main {
     .fotos {
         flex-direction: row; 
         position: absolute;
-     }
+}
     .ofertas {
         display: flex;
-   
+
     }
+    .negro {
+        display: none;
+    }
+    .blanco {
+        display: block;
+    }
+    .nav li a {
+        color: white; }
+ 
 }
 
 

@@ -1,0 +1,46 @@
+.box {
+    background-color: white;
+}
+
+.logos {
+    display: flex;
+    padding: 20px;
+    size: 2em;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.grilla-footer{
+    display: flex;
+    font-family: roboto;
+    padding: 20px;
+   text-align: center;
+}
+
+.titulo_footer{
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.marcaRegistrada {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.social{
+    color: black;
+}
+
+.marcaRegistrada {
+    align-content: center;
+}

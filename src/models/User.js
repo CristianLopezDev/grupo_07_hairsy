@@ -1,66 +1,60 @@
+// MODELO USER
 
-
-
-// 4. Editar info usuario
-// 5. Eliminar un usuario de la BD
-
-// CRUD
-
-/*const fs = require('fs');
-const { stringify } = require('querystring');
-const User = {
-    fileName : './data/user.json',
+const fs = require('fs');
+const fileName =  './src/data/user.json'
+const User = { 
+    getData : function() {
+        return JSON.parse(fs.readFileSync(fileName, 'utf-8'));  
+    },
     
-    getData : () => {
-        return JSON.parse(fs.readFileSync(this.fileName, 'utf-8'));  
-    },
-
-    generateId : () => {
-        let allUsers = this.findAll();
-        let lastUser = allUsers.pop();
-        if (lastUser) {
-            return lastUser.id + 1; 
-        }
-        return 1;
-         
-    },
-
-    findAll : () => {
+    findAll : function() {
         return this.getData();
     },
-
-    findByPk : (id) => {
-        let allUsers = this.findAll();
-        let userFound = allUsers.find(oneUser => oneUser.id === id);
-        return userFound;
-    },
-
-    findByField : (field, text) => {
-        let allUsers = this.findAll();
-        let userFound = allUsers.find(oneUser => oneUser.field === text);
-        return userFound;
-    },
     
-    create: (userData) => {
-        let allUsers = this.findAll();
-        newUser = {
-            id : this.generateId(),
-            ...userData
-        }
-        allUsers.push(newUser);
-        fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));
-        return true;
-
-    },
-
-    delete : (id) => {
+        findByPk : function (id) {
+            let allUsers = this.findAll();
+            let userFound = allUsers.find(oneUser => oneUser.id === id);
+            return userFound;
+        },
+        
+        
+        findByField : function (field, text) {
+            let allUsers = this.findAll();
+            let userFound = allUsers.find(oneUser => oneUser[field] === text);
+            return userFound;
+        },
+        
+        create: function(userData) {
+            let allUsers = this.findAll();
+            let newUser = {
+                id : this.generateId(),
+                ...userData
+            } 
+            allUsers.push(newUser);
+            fs.writeFileSync(fileName, JSON.stringify(allUsers, null, ' '));
+            return newUser;
+            
+        },
+        
+        generateId : function() {
+            let allUsers = this.findAll();
+            let lastUser = allUsers.pop();
+            if (lastUser) {
+                return lastUser.id + 1; 
+            }
+            return 1;
+        },
+        
+        delete : function(id) {
         let allUsers = this.findAll();
         let finalUsers = allUsers.filter (oneUser => oneUser.id !== id);
-        fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, ' '));
+        fs.writeFileSync(fileName, JSON.stringify(finalUsers, null, ' '));
         return true;
     }
 };
 
-console.log (User.findByPk(2));
+//console.log (User.create({fullname: 'Joaquin Perez', email: 'joaquo@hotmail.com'}));
 
-module.exports = User;*/
+module.exports = User;
+
+// Coment para Nico //

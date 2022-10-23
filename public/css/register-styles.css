@@ -9,13 +9,23 @@
 
 body{
     font-family: roboto;
-
+    background: url(/public/images/fondoRegister.jpg);
+    background-size: cover;
 }
 
-.img {
-    width: 100%;
-    height: 90%;
-    transition: all 500ms ease-out;
+.nav li a {
+    color: white;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+}
+
+.blanco {
+    display: block;
+}
+
+.negro{
+    display: none;
 }
 
 main {
@@ -26,9 +36,10 @@ main {
 }
 
 .login-box {
-    background: #FFCB00;
+    background: transparent;
+    backdrop-filter: blur(5px);
     margin-top: 200px;
-    border: 1px solid black;
+    border: 3px solid #FFCB00;
     display: flex;
     align-items: center;
     width: 320px;
@@ -41,6 +52,7 @@ main {
     box-sizing: border-box;
     padding: 30px 30px;
     border-radius: 20px;
+    color: white;
 }
 
 h2 {
@@ -101,8 +113,8 @@ h2 {
     .fotos {
         flex-direction: column; 
      }
-
 }
+
 @media (min-width: 768px){
     /* Laptop */
   

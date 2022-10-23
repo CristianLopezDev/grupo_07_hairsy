@@ -6,9 +6,18 @@
     padding-top: 0.1px;
 }
 
+.titulo{
+    color: white;
+}
+
 body{
     font-family: roboto;
-    background: url(/public/images/products/fondoLogin.jpeg);
+    background: url(/public/images/fondoLogin.jpeg);
+    background-position: top ;
+    background-position-x:  30px ;
+    background-position-y:  55px;
+    position: fixed;
+    
 }
 
 main {
@@ -18,11 +27,17 @@ main {
     height: 100vh;
 }
 
+.nav li a {
+    color: white;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+}
+
 .login-box {
-    /*background: #FFCB00;*/
-    
+
     margin-top: 200px;
-    border: 1.5px solid black;
+    border: 3px solid #FFCB00;
     display: flex;
     align-items: center;
     width: 320px;
@@ -80,6 +95,14 @@ h2 {
 
 }
 
+.contra {
+    font-weight: bold;
+}
+
+.register {
+    font-weight: bold;
+}
+
 
 
 
@@ -87,7 +110,13 @@ h2 {
     /* Tablets */
     .fotos {
         flex-direction: column; 
-     }
+    }
+    .blanco {
+        display: block;
+    }
+    .negro {
+        display: none;
+    }
 }
 
 
@@ -95,18 +124,30 @@ h2 {
     /* Tablets */
     .fotos {
         flex-direction: column; 
-     }
+    }
+    .blanco {
+        display: block;
+    }
+    .negro {
+        display: none;
+    }
 }
 @media (min-width: 768px){
     /* Laptop */
-   
+
     video {
         display: block;
     }
     .fotos {
         flex-direction: row; 
-     }
+    }
     
- 
+    .blanco {
+        display: block;
+    }
+    .negro {
+        display: none;
+    }
+
 
 }

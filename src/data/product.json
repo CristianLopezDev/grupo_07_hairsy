@@ -1,88 +1,98 @@
-[{"id":1,
-"name":"Mascara Reparadora",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":1200,
-"category":"care",
-"image": "Mascara Reparacion.png"},
-
-{"id":2,
-"name":"Tintura L'oreal 8.1",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":1350,
-"category":"color",
-"image": "vibrance1.jpg"},
-
-{"id":3,
-"name":"Cepillo",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":1600,
-"category":"styling",
-"image": "cepillo.jpg"},
-
-{"id":4,
-"name":"Wahl Magic Clip",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":3260.78,
-"category":"barber",
-"image": "clipper.jpg"},
-
-{"id":5,
-"name":"Mascara Hidratacion",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":1350,
-"category":"care",
-"image":"hidratacion.jpg"},
-
-{"id":6,
-"name":"Mascara Color",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":2400,
-"category":"care",
-"image":"serum.jpg"},
-
-{"id":7,
-"name":"Tintura L'oreal 6.34",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":2500,
-"category":"color",
-"image":"vibrance2.jpg"},
-
-{"id":8,
-"name":"Tintura L'oreal 6",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":500,
-"category":"color",
-"image":"vibrance3.jpg"},
-
-{"id":9,
-"name":"Wahl Detailer",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":3260.78,
-"category":"barber",
-"image":"detailer.jpg"},
-
-
-{"id":10,
-"name":"Mascara anti-frizz",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":2850,
-"category":"care",
-"image":"frizz.jpg"
-},
-
-{"id":11,
-"name":"Tijera filo navaja",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":1600,
-"category":"styling",
-"image": "tijera.jpg"
-},
-
-{"id":12,
-"name":"Peine de corte",
-"description":"massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
-"price":1600,
-"category":"styling",
-"image": "peine.jpg"
-}
+[
+  {
+    "id": 1,
+    "name": "Mascara Reparadora",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 1200,
+    "category": "care",
+    "image": "Mascara Reparacion.png"
+  },
+  {
+    "id": 2,
+    "name": "Tintura L'oreal 8.1",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 1350,
+    "category": "color",
+    "image": "vibrance1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cepillo",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 1600,
+    "category": "styling",
+    "image": "cepillo.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Wahl Magic Clip",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 3260.78,
+    "category": "barber",
+    "image": "clipper.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mascara Hidratacion",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 1350,
+    "category": "care",
+    "image": "hidratacion.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mascara Color",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 2400,
+    "category": "care",
+    "image": "serum.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Tintura L'oreal 6.34",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 2500,
+    "category": "color",
+    "image": "vibrance2.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Tintura L'oreal 6",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 500,
+    "category": "color",
+    "image": "vibrance3.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Wahl Detailer",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 3260.78,
+    "category": "barber",
+    "image": "detailer.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Mascara anti-frizz",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 2850,
+    "category": "care",
+    "image": "frizz.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Tijera filo navaja",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 1600,
+    "category": "styling",
+    "image": "tijera.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Peine de corte",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "price": 1600,
+    "category": "styling",
+    "image": "peine.jpg"
+  }
 ]

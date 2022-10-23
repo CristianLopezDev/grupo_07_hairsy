@@ -9,6 +9,30 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 	//all products
 const controller = {
+	all: async (req, res) => {
+        res.render('products/product', {
+            products: await db.Product.findAll({
+                where: {
+                    estado: 'A'
+                }
+            })
+            .then(product => {
+                data = JSON.parse(JSON.stringify(product));
+                return data;
+            }),
+            categories: await db.Category.findAll({
+                where: {
+                //falta completar
+				
+                }
+            })
+            .then(category => {
+                data = JSON.parse(JSON.stringify(category));
+                return data;
+            }),
+            nombrePagina: 'Productos'
+        })
+    },
     product: (req, res) => {
 		const filteredProducts = products.filter(product => product.category === req.params.category);
 		
@@ -30,17 +54,18 @@ const controller = {
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		const productsClone = products;
-		const newProduct = {
+		let newProduct = {
+			id: products[products.length - 1].id + 1,
 			name: req.body.name,
-			description: req.body.description,
 			price: req.body.price,
+			discount: req.body.discount,
 			category: req.body.category,
-			image: req.file?.filename,
-		};
-		productsClone.push(newProduct);
-		fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, ' '));
-		res.redirect ('/product');
+			description: req.body.description,
+			image: req.file.filename
+		}
+		products.push(newProduct);
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, "  "));
+		res.redirect("/")
 	},
 
 	// Update - Form to edit
@@ -48,7 +73,7 @@ const controller = {
         const editProduct = products.find((prod) => {
 			return prod.id == req.params.id;
 		})
-        res.render('edit', {editProduct});
+        res.render('./product/edit', {editProduct});
     },
 	// Update - Method to update
 	update: (req, res) => {

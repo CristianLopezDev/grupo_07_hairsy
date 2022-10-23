@@ -1,0 +1,157 @@
+[
+ {
+  "id": 1,
+  "fullname": "Cristian Lopez",
+  "username": "Chiru",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "chirumusic91@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 2,
+  "fullname": "Nicolas Mansilla",
+  "username": "Nmansilla",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "zxcv@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 3,
+  "fullname": "Nadia Schraier",
+  "username": "NSchraier",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "asca@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 4,
+  "fullname": "Martin Hinojal",
+  "username": "MHinojal",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "qwerty@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 5,
+  "fullname": "Tomas Olarte",
+  "username": "TOlarte",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "123456@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 6,
+  "fullname": "Andrey ",
+  "username": "Andrey",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "987654@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 7,
+  "fullname": "Lucas Galleti",
+  "username": "LGalleti",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "poiuy@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 8,
+  "fullname": "Pablo Morrone",
+  "username": "PMorrone",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "lkjhg@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 9,
+  "fullname": "Cristian Nicolas Lopez",
+  "username": "Cristian91",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "c.lopez91@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 10,
+  "fullname": "Matias Lute",
+  "username": "MLute",
+  "avatar": "chiru.png",
+  "birthday": "08/11/1991",
+  "email": "matias92@gmail.com",
+  "password": "Hairsy07",
+  "repassword": ""
+ },
+ {
+  "id": 11,
+  "fullname": "Joaquin Perez",
+  "email": "joaquo@hotmail.com"
+ },
+ {
+  "id": 12,
+  "fullname": "Jennifer Iralour",
+  "username": "Yeye",
+  "birthday": "1992-03-03",
+  "email": "qwert@hotmail.com",
+  "password": "$2a$10$2zXEHVsTekqjLZdBvFms2OoQw1tgEoRCj/4thUcrrrv2mkyre/FKK",
+  "repassword": "12345678",
+  "avatar": "avatar-1662692306592"
+ },
+ {
+  "id": 13,
+  "fullname": "Mauro Gallinal",
+  "username": "Tony91",
+  "birthday": "1991-08-08",
+  "email": "tonymdq91@hotmail.com",
+  "password": "$2a$10$vGb3jjH3DLPSAP2WxOArre9qhria2ZqG6v796xdCRzjF94bDGzOsu",
+  "repassword": "$2a$10$Owcr99Z7rR8kkI0seH0zrus7l8gD32Z2yw3NgNqXgxbghtbvg.Kvy",
+  "avatar": "avatar-1662692691286"
+ },
+ {
+  "id": 14,
+  "fullname": "Pepe Vasco",
+  "username": "Pepito",
+  "birthday": "1984-12-18",
+  "email": "wert@hotmail.com",
+  "password": "$2a$10$nnv065EL3LCPLGyzbTWGMuaDTlK.q2R5pFZHe1WROLOILfMM/Rxjy",
+  "repassword": "$2a$10$TjDVCDVDJdPJVTfg0odkX.f1YieMu0.JyBC03AcyPoj.1q1jveEUW",
+  "avatar": "avatar-1662693220479"
+ },
+ {
+  "id": 15,
+  "fullname": "Marco Polo",
+  "username": "Polito18",
+  "birthday": "1964-01-25",
+  "email": "marcopolo@hotmail.com",
+  "password": "$2a$10$nfTC2mHpJyfaf/5AhxNNRewOznsrpCQPJQpd4dUVy7/3JZSc/Vzau",
+  "repassword": "$2a$10$bKqDfRRic9F1sTE1f6tCV.qMUNpt547GBtlEULF8V0v/0Z6CXBYyK",
+  "avatar": "avatar-1662693480698"
+ },
+ {
+  "id": 16,
+  "fullname": "Jennifer Iralour",
+  "username": "Jenny",
+  "birthday": "1992-03-03",
+  "email": "jennifer@gmail.com",
+  "password": "$2a$10$qXk4ciFd4x219O/q.gcb1.T4bw1zLgs32Pe/Q7AvPWv9xqzJTFXp.",
+  "repassword": "$2a$10$JUJKEk1K3wlrSJdR14oep.IomnjzDMRNiW7s2DTAOBhiic6KWNIyG",
+  "avatar": "avatar-1664931053092"
+ }
+]

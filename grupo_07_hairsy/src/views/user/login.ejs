@@ -1,0 +1,54 @@
+<%- include('../partials/head') %>
+
+    <link href="/css/login-styles.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <%- include('../partials/header') %>
+
+            <main class="main">
+
+                <div class="login-box">
+                    <img src=""> </img>
+
+                    <h2 class="titulo">BIENVENIDXS</h2>
+
+                    <div class="login">
+
+                        <form action="/user/login" method="POST">
+
+                            <div class="usuario" >
+                                <input name = "username" type="text" placeholder="Nombre de usuario" > </input>
+                            </div>
+
+                            <div class="password">
+                                <input name = "password" type="password" placeholder="Contraseña"> </input>
+                            </div>
+
+
+
+                            <button class="enviar1" type="submit">Ingresar</button>
+                            <div class="pregunta">
+
+                                <a class="contra" href="/">Olvide mi Contraseña</a>
+                                <br>
+                                <a class="register" href="/user/register">Todavia no me registre</a>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+            </main>
+
+            <%- include('../partials/footer') %>
+
+    </body>
+
+    </html>
