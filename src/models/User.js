@@ -56,3 +56,5 @@ const User = {
 //console.log (User.create({fullname: 'Joaquin Perez', email: 'joaquo@hotmail.com'}));
 
 module.exports = User;
+
+// Coment para Nico //
