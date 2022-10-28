@@ -14,8 +14,8 @@ module.exports = (sequelize, dataTypes) => {
         birthday: { type: dataTypes.DATE},
         password: { type: dataTypes.STRING},
         repassword: { type: dataTypes.STRING},
-        avatar: { type: dataTypes.STRING}        
-
+        avatar: { type: dataTypes.STRING},        
+        rol_id: { type: dataTypes.INTEGER}
         
     };
 
@@ -26,9 +26,9 @@ module.exports = (sequelize, dataTypes) => {
     const User = sequelize.define(alias, cols, config);
     
     User.associate = (models) => {
-        User.belongsTo(models.User_rol, {
+        User.belongsTo(models.Rol, {
             as: 'users',
-            foreignKey: 'userId'
+            foreignKey: 'rol_id'
         })
     };
     

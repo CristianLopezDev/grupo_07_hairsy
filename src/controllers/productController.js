@@ -2,8 +2,10 @@ const fs = require('fs');
 const { restart } = require('nodemon');
 const path = require('path');
 
-const productsFilePath = path.join(__dirname, '../data/product.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const db = require("../database/models")
+
+//const productsFilePath = path.join(__dirname, '../data/product.json');
+//const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -46,8 +48,9 @@ const controller = {
 		const product = products.find(element => element.id == req.params.id);
 		res.render ('./product/detail', {product})
 	},
-
-	// Create - Form to create
+////////////////////////////////////////////////////////////////////////////
+	
+// Create - Form to create
 	create: (req, res) => {
 		res.render ('product/create')
 	},
