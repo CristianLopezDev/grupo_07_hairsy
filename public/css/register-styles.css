@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
     width: 100%;
-    margin: 0px ;
+    margin: 0px;
     padding: 0.01px;
     text-decoration: none;
-    
+
 }
 
-body{
+body {
     font-family: roboto;
     background: url(/public/images/fondoRegister.jpg);
     background-size: cover;
@@ -15,16 +15,16 @@ body{
 
 .nav li a {
     color: white;
-    text-decoration:none;
-    padding:5px;
-    display:block;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
 }
 
 .blanco {
     display: block;
 }
 
-.negro{
+.negro {
     display: none;
 }
 
@@ -33,6 +33,18 @@ main {
     padding: 0;
     margin: 0;
     height: 100vh;
+}
+
+.erroresBox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    left: 40%;
+    color: #FFCB00;
+    font-weight: bold;
+    z-index: 1;
+
 }
 
 .login-box {
@@ -45,7 +57,7 @@ main {
     width: 320px;
     height: 490px;
     flex-direction: column;
-    transform: translate( -50%,-50%);
+    transform: translate(-50%, -50%);
     position: relative;
     top: 25%;
     left: 50%;
@@ -87,41 +99,54 @@ h2 {
     margin-bottom: 40px;
     border-radius: 5px;
     border: none;
-    
+
 }
+
 .password {
     margin-bottom: 20px;
 
 }
 
-.product-form{
+.product-form {
     margin-top: 300px;
 }
 
 
 
-@media (max-width: 460px){
+@media (max-width: 460px) {
+
     /* Tablets */
     .fotos {
-        flex-direction: column; 
-     }
+        flex-direction: column;
+    }
 }
 
 
-@media (min-width: 460px){
+@media (min-width: 460px) {
+
     /* Tablets */
     .fotos {
-        flex-direction: column; 
-     }
+        flex-direction: column;
+    }
+    .erroresBox {
+       
+        left: 30%;
+        
+        
+    }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     /* Laptop */
-  
+
     video {
         display: block;
     }
+
     .fotos {
-        flex-direction: row; 
-     }
+        flex-direction: row;
+    }
+
+    
+
 }

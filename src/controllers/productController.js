@@ -2,10 +2,10 @@ const fs = require('fs');
 const { restart } = require('nodemon');
 const path = require('path');
 
-const db = require("../database/models")
+//const db = require("../database/models")
 
-//const productsFilePath = path.join(__dirname, '../data/product.json');
-//const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const productsFilePath = path.join(__dirname, '../data/product.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 

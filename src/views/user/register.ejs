@@ -3,6 +3,7 @@
     <link href="/css/register-styles.css" rel="stylesheet">
     <link href="/css/header.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
+    <script src="/public/js/register.js"></script>
 
 </head>
 
@@ -12,8 +13,10 @@
 
     <main class="main">
 
+        <div class="erroresBox"></div>
         <div class="login-box">
-            <div class="formulario">
+            
+            <div id="form" class="formulario">
                 <form action="/user/register" method="POST" enctype="multipart/form-data"><h4>Registrarse</h4>
                     <div class="nombre">
 
