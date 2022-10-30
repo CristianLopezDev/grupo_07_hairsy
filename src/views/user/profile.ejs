@@ -1,6 +1,6 @@
 <%- include('../partials/head') %>
 
-    <link href="/css/login-styles.css" rel="stylesheet">
+    <link href="/css/profile.css" rel="stylesheet">
     <link href="/css/header.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
 
@@ -12,38 +12,53 @@
 
             <main class="main">
 
-                <div class="profile-box">
-                    <img src=""> </img>
+                <div class="profileBox">
 
-                    <h2 class="titulo">BIENVENIDXS</h2>
-
-                    <div class="login">
-
-                        <form action="/user/login" method="POST">
-
-                            <div class="usuario" >
-                                <input name = "username" type="text" placeholder="Nombre de usuario" > </input>
+                    <div class="leftBox">
+                        <div>Imagen</div>
+                        <div>Editar Perfil</div>
+                        <div>Mensajes</div>
+                        <div>Mis Productos</div>
+                        <div>Historial</div>
+                    </div>
+                    <div class="rightBox">
+                        <div class="edit">
+                            <div>Nombre y Apellido</div>
+                            <div>Nombre de Usuario</div>
+                            <div>Avatar</div>
+                            <div>Fecha de nacimiento</div>
+                            <div>E-Mail</div>
+                            <div>
+                                <div>Nueva contraseña</div>
+                                <div>Reescriba contraseña</div>
                             </div>
+                        </div>
 
-                            <div class="password">
-                                <input name = "password" type="password" placeholder="Contraseña"> </input>
+                        <div class="mensajes">
+
+                            <div>Titulo</div>
+
+                            <div class="mensajesBox">
+
+                                <div></div>
+                            
+
                             </div>
+                        </div>    
 
+                       
 
+                        </div>
 
-                            <button class="enviar1" type="">Ingresar</button>
-                            <div class="pregunta">
+                        <div class="historial">
+                                <div>Titulo</div>
+                                <div>Compras</div>
+                                <div>Ventas</div>
 
-                                <a class="contra" href="/">Olvide mi Contraseña</a>
-                                <br>
-                                <a class="register" href="/user/register">Todavia no me registre</a>
                             </div>
-                        </form>
+                        </div>
 
                     </div>
-
-                </div>
-
 
             </main>
 
