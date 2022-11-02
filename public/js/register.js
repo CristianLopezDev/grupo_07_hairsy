@@ -27,7 +27,7 @@ window.addEventListener('load', function () {
         else {
             errores.push("El formato del mail ingresado no es valido");
         }
-        function checkPass(form) {
+    /* 
             const password = form.password.value;
             const repassword = form.repassword.value;
             const passwordFormat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
@@ -36,30 +36,31 @@ window.addEventListener('load', function () {
                 errores.push('El campo Contraseña no puede estar vacio');
             } else {
                 if (!passwordFormat(password)) {
-                    errores.push('Deberá tener mínimo 8 caracteres, una letras mayúsculas, una letra minúsculas, un número y un carácter especial');
+                    errores.push('Deberá tener mínimo 8 caracteres, una letras mayúsculas, una letra minúsculas, un número y un caracter especial');
                 } else {
                     setSuccessFor(password);
                 }
             }
 
-            if (repassword === '') {
+             if (repassword === '') {
                 errores.push('El campo Confirmar contraseña no puede estar vacio')
             } else if (repassword !== password) {
                 errores.push('Las contraseñas no coinciden');
                 return false;
-            } return true;
-        }
+            } return true;  */
+        console.log(errores)
         if (errores.length > 0) {
             event.preventDefault();
 
             const ulErrores = document.querySelector(".erroresBox")
+                ulErrores.innerHTML = "" 
             for (let i = 0; i < errores.length; i++) {
 
                 ulErrores.innerHTML += "<li>" + errores[i] + "</li>"
             } 
         }
-
-    }
+    } 
+    
 
 
 

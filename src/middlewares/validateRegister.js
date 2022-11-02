@@ -10,7 +10,7 @@ module.exports = [
     body('avatar')
         .custom((value, { req }) => {
             let file = req.file;
-            let acceptedExtensions = ['.jpg', '.png', '.gif']
+            let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg']
             if (!file) {
                 throw new Error ('Tienes que subir una imagen');
             } else {

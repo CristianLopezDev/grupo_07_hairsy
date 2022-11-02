@@ -31,8 +31,8 @@ router.get('/edit:id', productController.edit);
 router.put('/edit:id', productController.update); 
 
 // /*** DELETE ONE PRODUCT***/ 
-router.get('/delete', productController.destroy);
-router.delete('/delete', productController.destroy);
+router.get('/delete', productController.delete);
+router.delete('/delete/:id', productController.destroy);
 
 router.get('/:category', productController.product); 
 

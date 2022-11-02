@@ -8,8 +8,8 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        fullName:{ type: dataTypes.INTEGER },
-        userName: { type: dataTypes.INTEGER },
+        fullname:{ type: dataTypes.STRING},
+        username: { type: dataTypes.STRING },
         email: { type: dataTypes.STRING},
         birthday: { type: dataTypes.DATE},
         password: { type: dataTypes.STRING},
@@ -25,12 +25,12 @@ module.exports = (sequelize, dataTypes) => {
     };
     const User = sequelize.define(alias, cols, config);
     
-    User.associate = (models) => {
+/*     User.associate = (models) => {
         User.belongsTo(models.Rol, {
             as: 'users',
             foreignKey: 'rol_id'
         })
-    };
+    }; */
     
     
     return User;

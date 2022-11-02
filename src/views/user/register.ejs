@@ -3,7 +3,7 @@
     <link href="/css/register-styles.css" rel="stylesheet">
     <link href="/css/header.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
-    <script src="/public/js/register.js"></script>
+    <script src="/js/register.js"></script>
 
 </head>
 
@@ -13,14 +13,20 @@
 
     <main class="main">
 
-        <div class="erroresBox"></div>
+        <div class="erroresBox">
+            <% if (typeof errors != "undefined") {   
+                errors.forEach(error => { %>
+                    <li><%= error.msg %></li>
+            <%    })
+            }%>
+        </div>
         <div class="login-box">
             
             <div id="form" class="formulario">
                 <form action="/user/register" method="POST" enctype="multipart/form-data"><h4>Registrarse</h4>
                     <div class="nombre">
 
-                        <input type="text" placeholder="Nombre y apellido" name="fullname"> </input>
+                        <input  value="<%= typeof oldData !="undefined" ?oldData.fullname:'' %>  " type="text" placeholder="Nombre y apellido" name="fullname"> </input>
                     </div>
 
                     <div class="usuario">

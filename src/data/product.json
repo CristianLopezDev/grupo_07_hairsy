@@ -94,5 +94,31 @@
     "price": 1600,
     "category": "styling",
     "image": "peine.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Secador de pelo",
+    "price": "8000",
+    "discount": "0",
+    "category": "category",
+    "description": "Secador profesional"
+  },
+  {
+    "id": 14,
+    "name": "",
+    "price": "",
+    "discount": "",
+    "category": "",
+    "description": "",
+    "image": "1667188398699-WhatsApp Image 2022-07-04 at 11.08.49 AM.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "",
+    "price": "",
+    "discount": "",
+    "category": "",
+    "description": "",
+    "image": "1667188582525-WhatsApp Image 2022-07-04 at 11.08.49 AM.jpeg"
   }
 ]

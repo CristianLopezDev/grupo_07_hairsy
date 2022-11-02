@@ -10,22 +10,38 @@
                 <%- include('../partials/header') %>
 
                         <main>
-                                <!-- Agregar ciclo para vista dinamica -->
-                                <section class="main_product">
-                                        <div class="principales">
-                                                <div class="productos">
-                                                        <h5 class="titulo">Lorem Ipsum</h5>
-                                                        <a><img src="/public/images/products/product.png"></a>
-                                                                <p class="descripcion">$3.500</p>
-                                                                <button style="background-color:#ffcb00" ; type="button" class="btn btn-danger">Delete</button>
-                                                        
-                                                        
-                                                </div>
-                        
-                                        </div>
-                                </section>
+                                        <section class="main_product">
+                                                <table>
+                                                        <thead>
+                                                                <tr>
+                                                                        <th>
+                                                                                Id
+                                                                        </th> 
+                                                                        <th>
+                                                                                Nombre
+                                                                        </th>
+                                                                         <th>
+                                                                                Eliminar
+                                                                        </th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <% products.forEach(product => { %>
+                                                                        <tr>
+                                                                                <td><%= product.id%> </td>
+                                                                                <td><%= product.name%> </td>
+                                                                                <td>
+                                                                                        <form action="/product/delete/<%= product.id%>?_method=DELETE" method="POST"> 
+                                                                                        <button type="submit">ELIMINAR</button>
+                                                                                        </form>        
+                                                                                </td>
+                                                                        </tr>
+                                                              <%     } ) %> 
+                                                        </tbody>
+                                                </table>
+                                        </section>
 
-                                </div>
+                                        
 
 
                         </main>

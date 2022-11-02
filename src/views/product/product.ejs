@@ -25,6 +25,9 @@
                                                                 <a href="../user/cart">
                                                                 <button class="cart_button">Agregar al carrito</button>
                                                                 </a>
+                                                                <a href="/product/edit:<% element.id %> ">
+                                                                        <button class="cart_button">Editar</button>
+                                                                        </a>
                                                         
                                                 </div>
                                                 <% }) %>
@@ -36,7 +39,7 @@
                                         <% relatedProducts.forEach (element => { %>
                                         <div class="productos">
                                                 <h6 class="titulo"><%= element.name %></h6>
-                                                <a href="product/detail"><img src="/images/products/<%= element.image %>"></a>
+                                                <a href="/product/detail/<%= element.id %>"><img src="/images/products/<%= element.image %>"></a>
                                                         <p class="descripcion">$<%= element.price %></p>
                                                         <p class="descripcion">Impuestos incluidos</p>
                                                         <a href="/user/cart">    <button class="cart_button">Agregar al carrito</button></a>
