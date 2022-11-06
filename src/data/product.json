@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Mascara Reparadora",
-    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "description": "Tratamiento de reparacion para cabellos quimicamente dañados",
     "price": 1200,
     "category": "care",
     "image": "Mascara Reparacion.png"
@@ -120,5 +120,14 @@
     "category": "",
     "description": "",
     "image": "1667188582525-WhatsApp Image 2022-07-04 at 11.08.49 AM.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "ascasc",
+    "price": "ascasc",
+    "discount": "asc",
+    "category": "category",
+    "description": "ascasc",
+    "image": "1667703947540-WhatsApp Image 2022-07-04 at 11.08.49 AM.jpeg"
   }
 ]

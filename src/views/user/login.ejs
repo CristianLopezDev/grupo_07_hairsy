@@ -11,7 +11,14 @@
         <%- include('../partials/header') %>
 
             <main class="main">
-
+                
+                <div class="erroresBox">
+                    <% if (typeof errores != "undefined") {   
+                        errores.forEach(errors => { %>
+                            <li><%= errors.msg %></li>
+                    <%    })
+                    }%>
+                </div>
                 <div class="login-box">
                     <img src=""> </img>
 

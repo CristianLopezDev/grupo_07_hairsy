@@ -22,6 +22,10 @@ body{
     padding:5px;
     display:block;
 }
+.Imagen{
+    position: relative;
+    left: 350px;
+}
 
 .logos {
 

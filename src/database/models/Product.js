@@ -8,8 +8,8 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        name:{ type: dataTypes.INTEGER },
-        description: { type: dataTypes.INTEGER },
+        name:{ type: dataTypes.STRING },
+        description: { type: dataTypes.STRING },
         price:{ type: dataTypes.INTEGER},
         category_id: { type: dataTypes.INTEGER},
         image:{ type: dataTypes.STRING}        

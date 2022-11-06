@@ -10,38 +10,54 @@
                 <%- include('../partials/header') %>
 
                         <main>
-                                        <section class="main_product">
-                                                <table>
-                                                        <thead>
-                                                                <tr>
-                                                                        <th>
-                                                                                Id
-                                                                        </th> 
-                                                                        <th>
-                                                                                Nombre
-                                                                        </th>
-                                                                         <th>
-                                                                                Eliminar
-                                                                        </th>
+                                <section class="edit">
+                                        <table class="table">
+                                                <thead>
+                                                        <tr class="titles">
+                                                                <th>
+                                                                        Id
+                                                                </th>
+                                                                <th>
+                                                                        Nombre
+                                                                </th>
+                                                                <th>
+                                                                        Editar
+                                                                </th>
+                                                                <th>
+                                                                        Eliminar
+                                                                </th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody class="list">
+                                                        <% products.forEach(product=> { %>
+                                                                <tr class="article">
+                                                                        <td>
+                                                                                <%= product.id%>
+                                                                        </td>
+                                                                        <td>
+                                                                                <%= product.name%>
+                                                                        </td>
+                                                                        <td>
+                                                                                <a
+                                                                                        href="/product/edit:<%= product.id%> ">
+                                                                                        <button class="boton1"
+                                                                                                type="submit">EDITAR</button>
+                                                                                </a>
+                                                                        </td>
+                                                                        <td>
+                                                                                <form action="/product/delete/<%= product.id%>?_method=DELETE"
+                                                                                        method="POST">
+                                                                                        <button class="boton2"
+                                                                                                type="submit">ELIMINAR</button>
+                                                                                </form>
+                                                                        </td>
                                                                 </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                                <% products.forEach(product => { %>
-                                                                        <tr>
-                                                                                <td><%= product.id%> </td>
-                                                                                <td><%= product.name%> </td>
-                                                                                <td>
-                                                                                        <form action="/product/delete/<%= product.id%>?_method=DELETE" method="POST"> 
-                                                                                        <button type="submit">ELIMINAR</button>
-                                                                                        </form>        
-                                                                                </td>
-                                                                        </tr>
-                                                              <%     } ) %> 
-                                                        </tbody>
-                                                </table>
-                                        </section>
+                                                                <% } ) %>
+                                                </tbody>
+                                        </table>
+                                </section>
 
-                                        
+
 
 
                         </main>

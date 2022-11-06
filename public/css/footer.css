@@ -11,16 +11,17 @@
 }
 
 footer {
-    position: absolute;
+    position: relative;
     width: 100vw;
     margin-top: 50px;
+    bottom: -388px;
 }
 
 .grilla-footer{
     display: flex;
     font-family: roboto;
     padding: 20px;
-   text-align: center;
+    text-align: center;
 }
 
 .titulo_footer{

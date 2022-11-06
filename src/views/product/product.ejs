@@ -1,60 +1,65 @@
 <%- include('../partials/head') %>
 
-        <link href="/css/product-styles.css" rel="stylesheet">
-        <link href="/css/header.css" rel="stylesheet">
-        <link href="/css/footer.css" rel="stylesheet">
+  <link href="/css/product-styles.css" rel="stylesheet">
+  <link href="/css/header.css" rel="stylesheet">
+  <link href="/css/footer.css" rel="stylesheet">
 
-        </head>
+  </head>
 
-        <body>
+  <body>
 
-                <%- include('../partials/header') %>
+    <%- include('../partials/header') %>
 
-                        <main>
-                                <p class="banner">ENVIOS GRATIS A PARTIR DE $1000!</p>
-                                <section class="main_product">
-                                        <div class="principales">
-                                        <% filteredProducts.forEach (element => { %>
-                                                <div class="productos">
-                                                        <h6 class="titulo"><%= element.name %> </h6>
-                                                                <a href="/product/detail/<%= element.id %>">
-                                                                <img src="/images/products/<%= element.image %>">
-                                                                </a>
-                                                                <p class="descripcion">$<%= element.price %></p>
-                                                                <p class="descripcion">Impuestos incluidos</p>
-                                                                <a href="../user/cart">
-                                                                <button class="cart_button">Agregar al carrito</button>
-                                                                </a>
-                                                                <a href="/product/edit:<% element.id %> ">
-                                                                        <button class="cart_button">Editar</button>
-                                                                        </a>
-                                                        
-                                                </div>
-                                                <% }) %>
-                                        </div>
-                                </section>
+      <main>
+        <p class="banner">ENVIOS GRATIS A PARTIR DE $1000!</p>
+        <div class="caja">
+        <section class="main_product">
+          <div class="principales">
+            <% filteredProducts.forEach (element=> { %>
+              <div class="productos">
+                <h6 class="titulo">
+                  <%= element.name %>
+                </h6>
+                <a href="/product/detail/<%= element.id %>">
+                  <div class="imagenes"><img src="/images/products/<%= element.image %>"></div>
+                </a>
+                <p class="descripcion">$<%= element.price %>
+                </p>
+                <p class="descripcion">Impuestos incluidos</p>
+                <a href="../user/cart">
+                  <button class="cart_button">Agregar al carrito</button>
+                </a>
+                
 
-                                <div class="relacionados">
-                                        <h4>También te puede interesar</h4>
-                                        <% relatedProducts.forEach (element => { %>
-                                        <div class="productos">
-                                                <h6 class="titulo"><%= element.name %></h6>
-                                                <a href="/product/detail/<%= element.id %>"><img src="/images/products/<%= element.image %>"></a>
-                                                        <p class="descripcion">$<%= element.price %></p>
-                                                        <p class="descripcion">Impuestos incluidos</p>
-                                                        <a href="/user/cart">    <button class="cart_button">Agregar al carrito</button></a>
-                                                
-                                        </div>
-                                        <% }) %>
-                                
+              </div>
+              <% }) %>
+          </div>
+        </section>
 
-                                </div>
+        <div class="relacionados">
+          <h4>También te puede interesar</h4>
+          <% relatedProducts.forEach (element=> { %>
+            <div class="productos">
+              <h6 class="titulo">
+                <%= element.name %>
+              </h6>
+              <a href="/product/detail/<%= element.id %>"><img class="imagenes" src="/images/products/<%= element.image %>"></a>
+              <p class="descripcion">$<%= element.price %>
+              </p>
+              <p class="descripcion">Impuestos incluidos</p>
+              <a href="/user/cart"> <button class="cart_button">Agregar al carrito</button></a>
+
+            </div>
+            <% }) %>
 
 
-                        </main>
+        </div>
+      </div>
 
-                        <%- include('../partials/footer') %>
+      </main>
 
-        </body>
+      <%- include('../partials/footer') %>
 
-        </html>
+  </body>
+
+  </html>

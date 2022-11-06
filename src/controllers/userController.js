@@ -36,7 +36,7 @@ const userController = {
 
         return res.redirect("profile");
       }
-      res.render("user/login");
+    /*   res.render("user/login"); */
 
       return res.render("user/login", {
         errors: {
@@ -46,7 +46,7 @@ const userController = {
         },
       });
     }
-    res.render("user/login");
+    /* res.render("user/login"); */
     return res.render("user/login", {
       errors: {
         username: {

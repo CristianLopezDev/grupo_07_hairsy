@@ -1,68 +1,82 @@
 <%- include('../partials/head') %>
 
-    <link href="/css/profile.css" rel="stylesheet">
-    <link href="/css/header.css" rel="stylesheet">
-    <link href="/css/footer.css" rel="stylesheet">
+  <link href="/css/profile.css" rel="stylesheet">
+  <link href="/css/header.css" rel="stylesheet">
+  <link href="/css/footer.css" rel="stylesheet">
 
-    </head>
+  </head>
 
-    <body>
+  <body>
 
-        <%- include('../partials/header') %>
+    <%- include('../partials/header') %>
 
-            <main class="main">
-                <div>Editar Perfil</div>
+      <main class="main">
+        <div>Editar Perfil</div>
 
-                <div class="profileBox">
+        <div class="profileBox">
 
-                    <div class="leftBox">
-                        <div>Imagen</div>
-                        <div>Mensajes</div>
-                    </div>
-                    
-                    <div class="rightBox">
-                        <div class="edit">
-                            <div>Nombre y Apellido</div>
-                            <div>Nombre de Usuario</div>
-                            <div>Avatar</div>
-                            <div>Fecha de nacimiento</div>
-                            <div>E-Mail</div>
-                            <div>
-                                <div>Nueva contraseña</div>
-                                <div>Reescriba contraseña</div>
-                            </div>
-                        </div>
+          <div class="leftBox">
+            <div class="avatar">Imagen
+              <img src="/public/images/avatars/chiru.png">
+            </div>
+            
+          </div>
 
-                        <div class="mensajes">
+          <div class="rightBox">
+            <div class="edit">
+              <form action="/user/profile" method="POST" enctype="multipart/form-data"><h4>Edicion de Perfil</h4>
+                <div class="nombre">
 
-                            <div>Titulo</div>
+                    <input   type="text" placeholder="Nombre y apellido" name="fullname"> </input>
+                </div>
 
-                            <div class="mensajesBox">
+                <div class="usuario">
+                    <input type="text" placeholder="Nombre de usuario" name="username"> </input>
+                </div>
+                <div class="avatar">
+                    <label for="image" class="form-label"><h4>Imagen de perfil:</h4></label>
+                    <input type="file" name="avatar" id="image" class="form-input">
+                </div>
+                <div class="calendario">
+                    <h4> Fecha de nacimiento:</h4>
+                    <input type="date" name="birthday"> </input>
+                </div>
+                <div class="mail">
 
-                                <div></div>
-                            
+                    <input type="mail" placeholder="E-mail" name="email"> </input>
+                </div>
+                
+                <div class="password">
+                    <input type="password" placeholder="Contraseña" name="password"> </input>
+                </div>
+                
+                <div class="confirm">
+                    <input type="password" placeholder="Confirmar contraseña" name = "repassword"> </input>
+                </div>
 
-                            </div>
-                        </div>    
+                <div class="botones">
+                    <button class="boton1" type="submit">Editar</button>
+                    <button class="boton2" type="reset">Borrar</button>
+                </div>
+                </form>
 
-                       
+            </div>
 
-                        </div>
+            
 
-                        <div class="historial">
-                                <div>Titulo</div>
-                                <div>Compras</div>
-                                <div>Ventas</div>
 
-                            </div>
-                        </div>
 
-                    </div>
 
-            </main>
+          </div>
 
-            <%- include('../partials/footer') %>
+        </div>
+      <div class="relleno"></div>
+    
 
-    </body>
+      </main>
 
-    </html>
+      <%- include('../partials/footer') %>
+
+  </body>
+
+  </html>

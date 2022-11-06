@@ -25,16 +25,15 @@ module.exports = (sequelize, dataTypes) => {
     };
     const User = sequelize.define(alias, cols, config);
     
-/*     User.associate = (models) => {
+    User.associate = (models) => {
         User.belongsTo(models.Rol, {
             as: 'users',
             foreignKey: 'rol_id'
         })
-    }; */
+    }; 
     
     
     return User;
 
 };
 
-// comentario de prueba //

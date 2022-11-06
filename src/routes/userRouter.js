@@ -17,14 +17,14 @@ const authMiddleware = require('../middlewares/authMiddleware');
 router.get('/register', userController.register);           
 
 // REGISTER POST (CARGA INFO)
-router.post('/register', upload.single('avatar'), validateRegister, userController.processRegister);
+router.post('/register', upload.single('avatar'), validateRegister, validateUserEdit, userController.processRegister);
 
 
 
 // LOGIN FORM
-router.get('/login',/*  guestMiddleware, */ userController.login);
+router.get('/login',  guestMiddleware, validatePassword, userController.login);
 // LOGIN POST (CARGA INFO)
-router.post('/login', userController.loginProcess);
+router.post('/login', validatePassword, userController.loginProcess);
 
 // USER EDIT
 
