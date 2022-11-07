@@ -25,18 +25,37 @@ body{
     font-weight: bold;
 }
 
-.leftBox {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
 
 .rightBox {
     display:flex;
-    
-
+    position: relative;
+    right: 150px;
 }
+.relleno{
+    position: relative;
+    top: 500px;
+}
+.avatar{
+    position: relative;
+    left: 50px;
+    border: #FFCB00;
+    width: 200px;
+    height: 200px;
+}
+
+.boton1{
+    background: #FFCB00;
+    color: white;
+    border: white;
+    font-weight: bold;
+}
+.boton2 {
+    background: #f63d3d ;
+    color: white;
+    border: white;
+    font-weight: bold;
+}
+
 
 
 @media (max-width: 460px){

@@ -3,7 +3,7 @@
     <link href="/css/login-styles.css" rel="stylesheet">
     <link href="/css/header.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
-
+    <script src="/public/js/login.js"></script>
     </head>
 
     <body>
@@ -11,7 +11,14 @@
         <%- include('../partials/header') %>
 
             <main class="main">
-
+                
+                <div class="erroresBox">
+                    <% if (typeof errores != "undefined") {   
+                        errores.forEach(errors => { %>
+                            <li><%= errors.msg %></li>
+                    <%    })
+                    }%>
+                </div>
                 <div class="login-box">
                     <img src=""> </img>
 
@@ -33,7 +40,7 @@
 
                             <button class="enviar1" type="submit">Ingresar</button>
                             <div class="pregunta">
-
+                        
                                 <a class="contra" href="/">Olvide mi Contraseña</a>
                                 <br>
                                 <a class="register" href="/user/register">Todavia no me registre</a>

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Mascara Reparadora",
-    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus",
+    "description": "Tratamiento de reparacion para cabellos quimicamente dañados",
     "price": 1200,
     "category": "care",
     "image": "Mascara Reparacion.png"
@@ -94,5 +94,42 @@
     "price": 1600,
     "category": "styling",
     "image": "peine.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Secador de pelo",
+    "price": "8000",
+    "discount": "0",
+    "category": "category",
+    "description": "Secador profesional"
+  },
+  {
+    "id": 14,
+    "name": "Tintura L'oreal 6",
+    "price": "2500",
+    "discount": "0",
+    "category": "color1",
+    "description": "Tintura loreal altura 6",
+    "image": "color1.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Tintura L'oreal 6.34",
+    "price": "2500",
+    "discount": "0",
+    "category": "color1",
+    "description": "Tintura loreal altura 6.34",
+    "image": "color2.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Tintura L'oreal 8.1",
+    "price": "2500",
+    "discount": "0",
+    "category": "color1",
+    "description": "Tintura loreal altura 8.1",
+    "image": "color3.jpg"
   }
+  
+  
 ]

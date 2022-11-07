@@ -9,7 +9,7 @@
     <body>
 
         <%- include('../partials/header') %>
-        <h2 class="titulo">Tu carrito de Compras</h2>
+        <h2 class="titulo">Tu carrito de Compras V 1.0</h2>
             <main class="main-cart">
                 <section>
                     <div class="product-img"><img src="/public/images/products/serum.jpg"></div>
@@ -32,20 +32,19 @@
                             </div>
                         </div>
                         <div class="payment-icons">
-                            <i class="fa-brands fa-cc-visa"></i>
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                            <i class="fa-brands fa-cc-amex"></i>
+                            <div class ="pago" ><h5>Pago</h5>
+
+                                <i class="fa-brands fa-cc-visa"><input type="radio"></i>
+                                <i class="fa-brands fa-cc-mastercard"><input type="radio"></i>
+                                <i class="fa-brands fa-cc-amex"><input type="radio"></i>
+                                <input  class="boxPago1" type="text" placeholder="Nombre del titular"></input>
+                                <input  class="boxPago" type="text" placeholder="Numero de tarjeta"></input>
+                                <input  class="boxPago" type="text" placeholder="Vencimiento"></input>
+                                <input  class="boxPago" type="password" placeholder="Codigo de seguridad"></input>
+                                <button class="boxPago" type="submit">Comprar</button>
+                            </div>
                         </div>
-                        
-                        
-                        <div class ="pago" ><h5>Pago</h5>
-                            
-                            <input  class="boxPago1" type="text" placeholder="Nombre del titular"></input>
-                            <input  class="boxPago" type="text" placeholder="Numero de tarjeta"></input>
-                            <input  class="boxPago" type="text" placeholder="Vencimiento"></input>
-                            <input  class="boxPago" type="password" placeholder="Codigo de seguridad"></input>
-                            <button class="boxPago" type="submit">Comprar</button>
-                        </div>
+                       
                         
 
                 </section>

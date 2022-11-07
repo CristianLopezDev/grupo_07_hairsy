@@ -1,69 +1,81 @@
 <%- include('../partials/head') %>
 
-    <link href="/css/profile.css" rel="stylesheet">
-    <link href="/css/header.css" rel="stylesheet">
-    <link href="/css/footer.css" rel="stylesheet">
+  <link href="/css/profile.css" rel="stylesheet">
+  <link href="/css/header.css" rel="stylesheet">
+  <link href="/css/footer.css" rel="stylesheet">
 
-    </head>
+  </head>
 
-    <body>
+  <body>
 
-        <%- include('../partials/header') %>
+    <%- include('../partials/header') %>
 
-            <main class="main">
+      <main class="main">
+        <div>Editar Perfil</div>
 
-                <div class="profileBox">
+        <div class="profileBox">
 
-                    <div class="leftBox">
-                        <div>Imagen</div>
-                        <div>Editar Perfil</div>
-                        <div>Mensajes</div>
-                        <div>Mis Productos</div>
-                        <div>Historial</div>
+          <div class="leftBox">
+            <div class="avatar">Imagen
+              <img src="/public/images/Demo.jpg">
+            </div>
+            
+          </div>
+
+          <div class="rightBox">
+            <div class="edit">
+              <form action="/user/profile" method="POST" enctype="multipart/form-data"><h4>Edicion de Perfil</h4>
+                <div class="nombre">
+
+                    <input   type="text" placeholder="Nombre y apellido" name="fullname"> </input>
+                </div>
+
+                <div class="usuario">
+                    <input type="text" placeholder="Nombre de usuario" name="username"> </input>
+                </div>
+                <div class="avatar">
+                    <label for="image" class="form-label"><h4>Imagen de perfil:</h4></label>
+                    <input type="file" name="avatar" id="image" class="form-input">
+                </div>
+                <div class="calendario">
+                    <h4> Fecha de nacimiento:</h4>
+                    <input type="date" name="birthday"> </input>
+                </div>
+                <div class="mail">
+
+                    <input type="mail" placeholder="E-mail" name="email"> </input>
+                </div>
+                
+                <div class="password">
+                    <input type="password" placeholder="Contraseña" name="password"> </input>
+                </div>
+                
+                <div class="confirm">
+                    <input type="password" placeholder="Confirmar contraseña" name = "repassword"> </input>
+                </div>
+
+                <div class="botones">
+                    <button class="boton1" type="submit">Editar</button>
                     </div>
-                    <div class="rightBox">
-                        <div class="edit">
-                            <div>Nombre y Apellido</div>
-                            <div>Nombre de Usuario</div>
-                            <div>Avatar</div>
-                            <div>Fecha de nacimiento</div>
-                            <div>E-Mail</div>
-                            <div>
-                                <div>Nueva contraseña</div>
-                                <div>Reescriba contraseña</div>
-                            </div>
-                        </div>
+                </form>
 
-                        <div class="mensajes">
+            </div>
 
-                            <div>Titulo</div>
+            
 
-                            <div class="mensajesBox">
 
-                                <div></div>
-                            
 
-                            </div>
-                        </div>    
 
-                       
+          </div>
 
-                        </div>
+        </div>
+      <div class="relleno"></div>
+    
 
-                        <div class="historial">
-                                <div>Titulo</div>
-                                <div>Compras</div>
-                                <div>Ventas</div>
+      </main>
 
-                            </div>
-                        </div>
+      <%- include('../partials/footer') %>
 
-                    </div>
+  </body>
 
-            </main>
-
-            <%- include('../partials/footer') %>
-
-    </body>
-
-    </html>
+  </html>

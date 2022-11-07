@@ -6,21 +6,30 @@
     <div>
         <div class>
             <ul class="nav">    
-               <!-- <li class="menu"><a href="#"><i class="fas fa-thin fa-bars"></i></a></li>-->
-               <li class="user"><a href="#"><i class="fas fa-thin fa-user"></i></a>
+            <!-- <li class="menu"><a href="#"><i class="fas fa-thin fa-bars"></i></a></li>-->
+            <% if (!locals.isLogged) { %>
+        
+        
+            <li class="user"><a href="#"><i class="fas fa-thin fa-user"></i></a>
+            
                 <ul>
                     <li><a href="/user/login">Ingresar</a></li>
                     <li><a href="/user/register">Registrarse</a></li>
-                    <li><a href="/user/profile">Perfil</a></li>
-                    <li><a href="/logout">Cerrar Sesion</a></li>
-                    <li><a href="/product/create">Crear producto</a></li>
-                    <li><a href="/product/edit">Editar producto</a></li>
-                    <li><a href="/product/delete">Eliminar producto</a></li>
                 </ul>
                 </li>
-               
-                <li class="wish-list"><a href="#"><i class="fa-solid fa-sliders"></i></a></li>
-               
+                <% }  else  { %>
+                        <li class="user"><a href="#"><i class="fas fa-thin fa-user"></i></a>
+            
+                            <ul>
+                                <li><a href="/user/profile">Perfil</a></li>
+                                <li><a href="/product/create">Crear producto</a></li>
+                                <li><a href="/product/delete">Editar producto</a></li>
+                                <li><a href="/">Cerrar Sesion</a></li>
+                            </ul>
+                            </li>
+                        <% } %>
+                    <li class="wish-list"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            
                 <li class="contact"><a href="#"><i class="fas fa-thin fa-headphones"></i></a></li>
                 <li class="cart"><a href="/user/cart"><i class="fa-solid fa-cart-shopping"></a></i></li>
             </ul>

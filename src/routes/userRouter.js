@@ -14,15 +14,15 @@ const authMiddleware = require('../middlewares/authMiddleware');
 /*********************************************/
 
 // REGISTER FORM
-router.get('/register', userController.register);           
+router.get('/register', guestMiddleware, userController.register);           
 
 // REGISTER POST (CARGA INFO)
-router.post('/register', upload.single('avatar'), validateRegister, userController.processRegister);
+router.post('/register', upload.single('avatar'), userController.processRegister);
 
 
 
 // LOGIN FORM
-router.get('/login',/*  guestMiddleware, */ userController.login);
+router.get('/login',  guestMiddleware, validatePassword, userController.login);
 // LOGIN POST (CARGA INFO)
 router.post('/login', userController.loginProcess);
 
@@ -41,7 +41,7 @@ router.get('/profile', authMiddleware, userController.profile);
 //router.get('/profileUsers/:id/', authMiddleware, usersController.profileUsers);
 
 // LOGOUT
-router.get('/logout', userController.logout);
+router.post('/logout', userController.logout);
 
 
 module.exports = router;
@@ -50,4 +50,3 @@ module.exports = router;
 
 
 
-/* const { route } = require('./mainRouter'); */
