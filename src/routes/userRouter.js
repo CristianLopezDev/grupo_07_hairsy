@@ -41,7 +41,7 @@ router.get('/profile', authMiddleware, userController.profile);
 //router.get('/profileUsers/:id/', authMiddleware, usersController.profileUsers);
 
 // LOGOUT
-router.get('/logout', userController.logout);
+router.post('/logout', userController.logout);
 
 
 module.exports = router;
@@ -50,4 +50,3 @@ module.exports = router;
 
 
 
-/* const { route } = require('./mainRouter'); */

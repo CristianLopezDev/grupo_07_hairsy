@@ -127,22 +127,7 @@ const controller = {
 	}
 
 
-	/* destroy: (req, res) => {
-		res.render('./product/delete');
 
-		const deletedProduct = products.find((prod) => {
-			return prod.id == req.params.id;
-		})
-
-		const prodIndex = products.findIndex((p) => p.id == deletedProduct.id);
-
-		products.slice(prodIndex, 1);
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
-
-		res.redirect('/product');
-
-	} */
 }
 
 module.exports = controller 

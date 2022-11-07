@@ -10,6 +10,13 @@ const productRouter = require('./routes/productRouter');
 const userRouter = require('./routes/userRouter');
 /******************MIDDLEWARE*********************/
 const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
+
+/*******************API'S************************/
+/* //Aquí llamo a la ruta de las api de movies
+const apiProductRouter = require('./routes/api/productRouter')
+//Aquí llamo a la ruta de las api de actors
+const apiUserRouter = require('./routes/api/userRouter')
+ */
 /*****************SESSION************************/
 app.use(session( {
     secret: "Nuestro mensaje secreto",
@@ -39,7 +46,9 @@ app.use(express.json());
 app.use('/',mainRouter)
 app.use('/product', productRouter);
 app.use('/user', userRouter);
-
+/* app.use('/api/productRouter',apiProductRouter);
+app.use('/api/userRouter',apiUserRouter);
+ */
 /****************404**********************/
 app.use((req, res, next) => {
     res.status(404).render('not-found');
