@@ -38,7 +38,7 @@ const controller = {
 	product: (req, res) => {
 		const filteredProducts = products.filter(product => product.category === req.params.category);
 
-		const relatedProducts = products.filter(product => product.category === req.params.category);
+		const relatedProducts = products.filter(product => product.category === "color1");
 
 		res.render('product/product', { filteredProducts, relatedProducts });
 

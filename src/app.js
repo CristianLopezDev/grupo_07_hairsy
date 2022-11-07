@@ -8,6 +8,8 @@ const app = express();
 const mainRouter = require("./routes/mainRouter")
 const productRouter = require('./routes/productRouter');
 const userRouter = require('./routes/userRouter');
+/******************MIDDLEWARE*********************/
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
 /*****************SESSION************************/
 app.use(session( {
     secret: "Nuestro mensaje secreto",
@@ -15,6 +17,8 @@ app.use(session( {
     saveUninitialized: false,
     
 }));
+
+app.use(userLoggedMiddleware);
 /**************EDIT DELETE*****************/
 app.use(methodOverride('_method'));
 

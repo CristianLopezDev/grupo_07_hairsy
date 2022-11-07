@@ -16,7 +16,11 @@ body {
   padding: 5px;
   display: block;
 }
-
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .logos {
   display: flex;
   padding: 20px;
@@ -31,7 +35,9 @@ body {
   font-family: roboto;
   margin-top: 50px;
 }
-
+.carro {
+  display: contents;
+}
 body {
   background-color: white;
 }
@@ -107,7 +113,13 @@ main {
     width: 250px;
     height: 400px;
     object-fit: contain;
+    
 }
+.centrar{
+  display: flex;
+    justify-content: center;
+}
+
 .imagenes img {
     width: 100%; 
     height: 100%;
@@ -115,14 +127,24 @@ main {
 }
 .cart_button{
     width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
 }
 
 .relacionados {
-    /* width:425px ;
-    height:425px */ 
+    width:425px ;
+    height:425px; 
     position: relative;
     top: 100px;
-    
+    object-fit: contain;
+}
+.imagenes img {
+  width: 100%; 
+  height: 100%;
+  object-fit: contain;
 }
 .descripcion {
   font-size: 20px;
@@ -164,6 +186,7 @@ h4 {
   display: flex;
 }
 
+
 .agregar-carrito-button {
   background-color: darksalmon;
   height: 30px;
@@ -185,6 +208,10 @@ h3 {
   .blanco {
     display: none;
   }
+  .cart_button {
+    height: 50px;
+  }
+
 }
 
 @media (min-width: 460px) {
@@ -195,6 +222,10 @@ h3 {
   .blanco {
     display: none;
   }
+  .cart_button {
+    height: 50px;
+  }
+
 }
 @media (min-width: 768px) {
   /* Laptop */

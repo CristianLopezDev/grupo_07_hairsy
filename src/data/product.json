@@ -105,29 +105,30 @@
   },
   {
     "id": 14,
-    "name": "",
-    "price": "",
-    "discount": "",
-    "category": "",
-    "description": "",
-    "image": "1667188398699-WhatsApp Image 2022-07-04 at 11.08.49 AM.jpeg"
+    "name": "Tintura L'oreal 6",
+    "price": "2500",
+    "discount": "0",
+    "category": "color1",
+    "description": "Tintura loreal altura 6",
+    "image": "color1.jpg"
   },
   {
     "id": 15,
-    "name": "",
-    "price": "",
-    "discount": "",
-    "category": "",
-    "description": "",
-    "image": "1667188582525-WhatsApp Image 2022-07-04 at 11.08.49 AM.jpeg"
+    "name": "Tintura L'oreal 6.34",
+    "price": "2500",
+    "discount": "0",
+    "category": "color1",
+    "description": "Tintura loreal altura 6.34",
+    "image": "color2.jpg"
   },
   {
     "id": 16,
-    "name": "ascasc",
-    "price": "ascasc",
-    "discount": "asc",
-    "category": "category",
-    "description": "ascasc",
-    "image": "1667703947540-WhatsApp Image 2022-07-04 at 11.08.49 AM.jpeg"
+    "name": "Tintura L'oreal 8.1",
+    "price": "2500",
+    "discount": "0",
+    "category": "color1",
+    "description": "Tintura loreal altura 8.1",
+    "image": "color3.jpg"
   }
+  
 ]
