@@ -147,9 +147,9 @@ h3{
 
 }
 
-/*.pago {
-
-}*/
+.pago {
+        text-align: center;
+}
 
 .acumulador {
     height: 20px;

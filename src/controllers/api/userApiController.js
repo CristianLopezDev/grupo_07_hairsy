@@ -1,7 +1,5 @@
-/* const db = require("../../database/models")
+const db = require("../../database/models")
 
-
-//all products
 const userApiController = {
 	all: (req, res) => {
         db.User.findAll()
@@ -15,11 +13,7 @@ const userApiController = {
                     data: users
                 });
             })
-    }
-
-
-
-
+    },
 }
 
-module.exports = userApiController; */
+module.exports = userApiController;

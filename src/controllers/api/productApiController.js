@@ -1,16 +1,17 @@
-/* const db = require("../../database/models")
+const db = require("../../database/models")
+const sequelize = db.sequelize;
 
 
 //all products
 const productApiController = {
-	all: (req, res) => {
+	list: (req, res) => {
         db.Product.findAll()
             .then(products => {
                 res.json({
                     meta: {
                         status: 200,
                         total: products.length,
-                        url: req.url
+                        url: 'api/products'
                     },
                     data: products
                 });
@@ -29,10 +30,7 @@ const productApiController = {
                     data: product
                 });
             });
-    }
-
-
-
+    },
 }
 
-module.exports = productApiController; */
+module.exports = productApiController;
